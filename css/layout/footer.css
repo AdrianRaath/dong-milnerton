@@ -1,0 +1,121 @@
+/**
+ * Footer
+ * Site footer styles
+ */
+
+.footer {
+    background-color: var(--color-black);
+    padding: var(--space-12) 0;
+    border-top: 1px solid var(--color-gray-800);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-6);
+    text-align: center;
+}
+
+/* ===========================================
+   Footer Brand
+   =========================================== */
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.footer-brand .logo-text {
+    font-size: var(--text-lg);
+    font-weight: var(--font-bold);
+    color: var(--text-inverse);
+}
+
+.footer-tagline {
+    font-size: var(--text-sm);
+    color: var(--text-inverse-secondary);
+}
+
+/* ===========================================
+   Footer Links
+   =========================================== */
+
+.footer-links {
+    display: flex;
+    gap: var(--space-6);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links a {
+    font-size: var(--text-sm);
+    color: var(--text-inverse-secondary);
+    transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+    color: var(--text-inverse);
+}
+
+/* ===========================================
+   Footer Copyright
+   =========================================== */
+
+.footer-copyright {
+    font-size: var(--text-xs);
+    color: var(--color-gray-500);
+}
+
+/* ===========================================
+   Expanded Footer Layout (Optional)
+   =========================================== */
+
+.footer.expanded .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: start;
+    text-align: left;
+}
+
+.footer.expanded .footer-brand {
+    align-items: flex-start;
+}
+
+.footer.expanded .footer-links {
+    justify-content: center;
+}
+
+.footer.expanded .footer-copyright {
+    text-align: right;
+    align-self: center;
+}
+
+/* ===========================================
+   Responsive
+   =========================================== */
+
+@media (max-width: 768px) {
+    .footer {
+        padding: var(--space-8) 0;
+    }
+
+    .footer-links {
+        gap: var(--space-4);
+    }
+
+    .footer.expanded .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer.expanded .footer-brand {
+        align-items: center;
+    }
+
+    .footer.expanded .footer-copyright {
+        text-align: center;
+    }
+}

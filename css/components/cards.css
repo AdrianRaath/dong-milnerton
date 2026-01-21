@@ -1,0 +1,160 @@
+/**
+ * Card Component
+ * Reusable card styles for various content types
+ */
+
+.card {
+    background-color: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: transform var(--transition-base),
+                box-shadow var(--transition-base);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+}
+
+.card-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: var(--space-6);
+}
+
+.card-title {
+    font-size: var(--text-xl);
+    font-weight: var(--font-semibold);
+    margin-bottom: var(--space-2);
+}
+
+.card-description {
+    color: var(--text-secondary);
+    font-size: var(--text-sm);
+    line-height: var(--leading-relaxed);
+}
+
+/* ===========================================
+   Placeholder Images
+   =========================================== */
+
+.placeholder-image {
+    background: linear-gradient(135deg, var(--color-gray-200) 0%, var(--color-gray-300) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16 / 10;
+    position: relative;
+    overflow: hidden;
+}
+
+.placeholder-image::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.placeholder-image.large {
+    aspect-ratio: 4 / 3;
+}
+
+.placeholder-image.square {
+    aspect-ratio: 1 / 1;
+}
+
+.placeholder-image.portrait {
+    aspect-ratio: 3 / 4;
+}
+
+.placeholder-text {
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--color-gray-500);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wider);
+    z-index: 1;
+}
+
+/* Hero placeholder */
+.hero-placeholder-image {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--color-gray-800) 0%, var(--color-gray-900) 50%, var(--color-black) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-placeholder-image .placeholder-text {
+    color: var(--color-gray-600);
+    font-size: var(--text-lg);
+}
+
+/* ===========================================
+   Stat Card
+   =========================================== */
+
+.stat-card {
+    text-align: center;
+    padding: var(--space-8);
+}
+
+.stat-number {
+    font-size: var(--text-6xl);
+    font-weight: var(--font-bold);
+    line-height: var(--leading-none);
+    color: var(--text-primary);
+    display: inline;
+}
+
+.stat-suffix {
+    font-size: var(--text-4xl);
+    font-weight: var(--font-bold);
+    color: var(--text-primary);
+}
+
+.stat-label {
+    display: block;
+    margin-top: var(--space-4);
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wider);
+}
+
+@media (max-width: 768px) {
+    .stat-number {
+        font-size: var(--text-5xl);
+    }
+
+    .stat-suffix {
+        font-size: var(--text-3xl);
+    }
+}

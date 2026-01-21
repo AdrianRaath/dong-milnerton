@@ -1,0 +1,190 @@
+/**
+ * Safety Section
+ * Grid-based safety features showcase
+ */
+
+.safety-section {
+    padding: var(--section-padding) 0;
+    background-color: var(--bg-primary);
+}
+
+.safety-section .section-header {
+    margin-bottom: var(--space-16);
+}
+
+.safety-section .section-header h2 {
+    margin-bottom: var(--space-4);
+}
+
+.safety-section .section-header p {
+    font-size: var(--text-lg);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+}
+
+/* ===========================================
+   Safety Grid
+   =========================================== */
+
+.safety-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+}
+
+/* ===========================================
+   Safety Card
+   =========================================== */
+
+.safety-card {
+    background-color: var(--bg-secondary);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    transition: transform var(--transition-base),
+                box-shadow var(--transition-base);
+}
+
+.safety-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+}
+
+.safety-image {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+    background: linear-gradient(135deg, var(--color-gray-200) 0%, var(--color-gray-300) 100%);
+}
+
+.safety-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.safety-card:hover .safety-image img {
+    transform: scale(1.05);
+}
+
+.safety-image .placeholder-image {
+    aspect-ratio: 16 / 10;
+    background: linear-gradient(135deg, var(--color-gray-200) 0%, var(--color-gray-300) 100%);
+}
+
+.safety-content {
+    padding: var(--space-6);
+}
+
+.safety-title {
+    font-size: var(--text-xl);
+    font-weight: var(--font-semibold);
+    color: var(--text-primary);
+    margin-bottom: var(--space-3);
+}
+
+.safety-description {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+}
+
+/* ===========================================
+   Feature Icon (Optional Enhancement)
+   =========================================== */
+
+.safety-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-gray-900);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-4);
+}
+
+.safety-icon svg {
+    width: 24px;
+    height: 24px;
+    color: var(--text-inverse);
+}
+
+/* ===========================================
+   Alternate Layout - Horizontal Cards
+   =========================================== */
+
+.safety-grid.horizontal {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+}
+
+.safety-grid.horizontal .safety-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.safety-grid.horizontal .safety-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ===========================================
+   Responsive
+   =========================================== */
+
+@media (max-width: 1024px) {
+    .safety-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .safety-card:last-child {
+        grid-column: span 2;
+    }
+
+    .safety-card:last-child .safety-image .placeholder-image {
+        aspect-ratio: 21 / 9;
+    }
+}
+
+@media (max-width: 1024px) {
+    .safety-section .section-header p {
+        font-size: var(--text-base);
+    }
+}
+
+@media (max-width: 768px) {
+    .safety-section {
+        padding: var(--section-padding-mobile) 0;
+    }
+
+    .safety-section .section-header {
+        margin-bottom: var(--space-10);
+    }
+
+    .safety-section .section-header p {
+        font-size: var(--text-sm);
+    }
+
+    .safety-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    .safety-card:last-child {
+        grid-column: auto;
+    }
+
+    .safety-card:last-child .safety-image .placeholder-image {
+        aspect-ratio: 16 / 10;
+    }
+
+    .safety-title {
+        font-size: var(--text-lg);
+    }
+
+    .safety-grid.horizontal .safety-card {
+        grid-template-columns: 1fr;
+    }
+}

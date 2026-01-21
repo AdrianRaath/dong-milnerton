@@ -1,0 +1,217 @@
+/**
+ * Navigation Component
+ * Header navigation styles with responsive mobile menu
+ */
+
+.nav-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+    transition: background-color var(--transition-base),
+                box-shadow var(--transition-base);
+}
+
+.nav-header.scrolled {
+    background-color: var(--color-white);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow-md);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: var(--space-4) var(--container-padding);
+    height: 80px;
+}
+
+/* Logo */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    z-index: 10;
+}
+
+.logo-image {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: var(--text-xl);
+    font-weight: var(--font-bold);
+    color: var(--text-primary);
+    letter-spacing: var(--tracking-tight);
+    transition: color var(--transition-base);
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+}
+
+.nav-link {
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+    color: var(--text-primary);
+    letter-spacing: var(--tracking-wide);
+    transition: color var(--transition-fast), opacity var(--transition-fast);
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width var(--transition-base);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+/* Navigation CTA Button */
+.nav-cta {
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--text-sm);
+}
+
+/* Mobile Menu Toggle */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+}
+
+.hamburger {
+    width: 24px;
+    height: 2px;
+    background-color: var(--text-primary);
+    position: relative;
+    transition: background-color var(--transition-fast);
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: var(--text-primary);
+    transition: transform var(--transition-base);
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    top: 8px;
+}
+
+.nav-header.scrolled .hamburger,
+.nav-header.scrolled .hamburger::before,
+.nav-header.scrolled .hamburger::after {
+    background-color: var(--text-primary);
+}
+
+/* Mobile menu open state */
+.nav-toggle.active .hamburger {
+    background-color: transparent;
+}
+
+.nav-toggle.active .hamburger::before {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.nav-toggle.active .hamburger::after {
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+/* ===========================================
+   Responsive Styles
+   =========================================== */
+
+@media (max-width: 1024px) {
+    .nav-menu {
+        gap: var(--space-6);
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-image {
+        height: 24px;
+    }
+
+    .logo-text {
+        font-size: var(--text-base);
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--space-8);
+        background-color: var(--bg-dark);
+        transform: translateX(100%);
+        transition: transform var(--transition-base);
+    }
+
+    .nav-menu.active {
+        transform: translateX(0);
+    }
+
+    .nav-menu .nav-link {
+        font-size: var(--text-2xl);
+        color: var(--text-inverse);
+    }
+
+    .nav-cta {
+        display: none !important;
+    }
+
+    .nav-header.menu-open .hamburger::before,
+    .nav-header.menu-open .hamburger::after {
+        background-color: var(--text-inverse);
+    }
+
+    .nav-header.menu-open .hamburger {
+        background-color: transparent;
+    }
+
+    .nav-header.menu-open .nav-logo {
+        opacity: 0;
+        pointer-events: none;
+    }
+}

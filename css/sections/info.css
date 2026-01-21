@@ -1,0 +1,145 @@
+/**
+ * Info Section
+ * Split content section with text and image
+ */
+
+.info-section {
+    background-color: var(--bg-secondary);
+    overflow: hidden;
+}
+
+.info-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 600px;
+}
+
+/* ===========================================
+   Info Text
+   =========================================== */
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--section-padding) var(--space-12) var(--section-padding) calc((100vw - var(--container-max)) / 2 + var(--container-padding));
+    max-width: none;
+}
+
+.info-text h2 {
+    margin-bottom: var(--space-6);
+}
+
+.info-text p {
+    margin-bottom: var(--space-6);
+}
+
+.info-text p:last-of-type {
+    margin-bottom: var(--space-8);
+}
+
+.info-text .btn {
+    align-self: flex-start;
+}
+
+/* ===========================================
+   Info Image
+   =========================================== */
+
+.info-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.info-image .placeholder-image {
+    position: absolute;
+    inset: 0;
+    aspect-ratio: auto;
+    height: 100%;
+    background: linear-gradient(135deg, var(--color-gray-200) 0%, var(--color-gray-300) 100%);
+}
+
+.info-image .placeholder-image.large {
+    aspect-ratio: auto;
+}
+
+.info-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===========================================
+   Alternate Layout (Image Left)
+   =========================================== */
+
+.info-section.reversed .info-content {
+    direction: rtl;
+}
+
+.info-section.reversed .info-content > * {
+    direction: ltr;
+}
+
+.info-section.reversed .info-text {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* ===========================================
+   Dark Variant
+   =========================================== */
+
+.info-section.dark {
+    background-color: var(--bg-dark);
+}
+
+.info-section.dark h2 {
+    color: var(--text-inverse);
+}
+
+.info-section.dark p {
+    color: var(--text-inverse-secondary);
+}
+
+/* ===========================================
+   Responsive
+   =========================================== */
+
+@media (max-width: 1400px) {
+    .info-text {
+        padding: var(--section-padding) var(--space-12) var(--section-padding) var(--container-padding);
+    }
+}
+
+@media (max-width: 1024px) {
+    .info-text {
+        padding: var(--space-12) var(--space-8) var(--space-12) var(--container-padding);
+    }
+}
+
+@media (max-width: 768px) {
+    .info-content {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .info-text {
+        padding: var(--section-padding-mobile) var(--container-padding);
+        max-width: 100%;
+        order: 2;
+    }
+
+    .info-image {
+        min-height: 300px;
+        order: 1;
+    }
+
+    .info-section.reversed .info-content {
+        direction: ltr;
+    }
+
+    .info-section.reversed .info-text {
+        margin: 0;
+    }
+}

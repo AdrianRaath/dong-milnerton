@@ -1,0 +1,173 @@
+/**
+ * Hero Section
+ * Full-screen hero with background image - Tesla-inspired layout
+ */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 80px; /* Account for fixed nav */
+  background-image: url("../../images/general/home-hero.jpg");
+  background-size: cover;
+  background-position: center 60%;
+  background-repeat: no-repeat;
+}
+
+/* ===========================================
+   Hero Content - Left aligned, matching nav width
+   =========================================== */
+
+.hero-content {
+  text-align: left;
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--space-32) var(--container-padding) var(--space-6);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title {
+  font-size: var(--text-5xl);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-tight);
+  margin-bottom: var(--space-8);
+  max-width: 600px;
+}
+
+.hero-cta {
+  margin-top: var(--space-2);
+}
+
+/* ===========================================
+   Scroll Indicator / Dots
+   =========================================== */
+
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: var(--space-8);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  animation: fadeIn 1s ease-out 0.5s both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero-dots {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.hero-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-gray-400);
+  transition: background-color var(--transition-fast);
+  cursor: pointer;
+}
+
+.hero-dot.active {
+  background-color: var(--color-gray-700);
+}
+
+.hero-dot:hover {
+  background-color: var(--color-gray-600);
+}
+
+/* Hide old scroll indicator elements */
+.scroll-text,
+.scroll-line {
+  display: none;
+}
+
+/* ===========================================
+   Large Screen Adjustment
+   =========================================== */
+
+@media (min-width: 1441px) {
+  .hero {
+    min-height: calc(100vh - 64px);
+  }
+}
+
+/* ===========================================
+   Responsive
+   =========================================== */
+
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: var(--text-4xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: var(--space-20) var(--container-padding) var(--space-4);
+  }
+
+  .hero-title {
+    font-size: var(--text-3xl);
+  }
+
+  .hero-subtitle {
+    font-size: var(--text-base);
+  }
+
+  .hero-scroll-indicator {
+    bottom: var(--space-4);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    background-image: url("../../images/general/mobile-home-hero.jpg");
+    min-height: 90vh;
+  }
+
+  .hero-title {
+    font-size: var(--text-3xl);
+    color: var(--text-inverse);
+  }
+
+  .hero-title .text-brand {
+    color: var(--text-inverse);
+  }
+}
+
+/* ===========================================
+   Hero with light background (for light images)
+   =========================================== */
+
+.hero.light-bg .hero-title {
+  color: var(--text-primary);
+}
+
+.hero.light-bg .hero-subtitle {
+  color: var(--text-secondary);
+}

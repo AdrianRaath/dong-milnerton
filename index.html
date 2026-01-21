@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DongFeng | Electric Vehicles</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/base/reset.css" />
+    <link rel="stylesheet" href="css/base/variables.css" />
+    <link rel="stylesheet" href="css/base/typography.css" />
+    <link rel="stylesheet" href="css/base/utilities.css" />
+    <link rel="stylesheet" href="css/components/navigation.css" />
+    <link rel="stylesheet" href="css/components/buttons.css" />
+    <link rel="stylesheet" href="css/components/cards.css" />
+    <link rel="stylesheet" href="css/components/slider.css" />
+    <link rel="stylesheet" href="css/sections/hero.css" />
+    <link rel="stylesheet" href="css/sections/models.css" />
+    <link rel="stylesheet" href="css/sections/about.css" />
+    <link rel="stylesheet" href="css/sections/info.css" />
+    <link rel="stylesheet" href="css/sections/safety.css" />
+    <link rel="stylesheet" href="css/sections/contact.css" />
+    <link rel="stylesheet" href="css/layout/footer.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="nav-header">
+      <nav class="nav-container">
+        <a href="/" class="nav-logo">
+          <img src="images/general/df-logo.png" alt="DongFeng" class="logo-image" />
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="#" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#models" class="nav-link">Models</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <a href="#book" class="btn btn-primary nav-cta">Book Test Drive</a>
+
+        <button class="nav-toggle" aria-label="Toggle menu">
+          <span class="hamburger"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Drive the <span class="text-brand">Future</span>, Beyond a Car. A
+            Vision for Tomorrow.
+          </h1>
+          <a href="#models" class="btn btn-primary hero-cta">Browse Models</a>
+        </div>
+      </section>
+
+      <!-- Models Section -->
+      <section id="models" class="models-section models-section--fullwidth">
+        <div class="models-slider">
+          <button class="slider-btn prev" aria-label="Previous">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="15,18 9,12 15,6"></polyline>
+            </svg>
+          </button>
+
+          <div class="slider-track">
+            <!-- Model Card 1 -->
+            <div class="model-card">
+              <div class="model-card-inner">
+                <img
+                  src="images/general/007-preview.png"
+                  alt="DongFeng 007"
+                  class="model-bg"
+                />
+                <div class="model-header">
+                  <h3 class="model-name">007</h3>
+                  <span class="model-category"
+                    >Breaking Barriers to EV Performance</span
+                  >
+                </div>
+                <div class="model-specs-overlay">
+                  <div class="spec-row">
+                    <span class="spec-label">Range</span>
+                    <span class="spec-value">620 km</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">Battery</span>
+                    <span class="spec-value">100 kWh</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">Charging</span>
+                    <span class="spec-value">18 min</span>
+                  </div>
+                </div>
+                <div class="model-content">
+                  <div class="model-actions">
+                    <a href="#" class="btn btn-primary">Test Drive</a>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                  </div>
+                </div>
+                <div class="model-swatches">
+                  <span
+                    class="swatch"
+                    style="--swatch-color: #1a1a1a"
+                    title="Black"
+                  ></span>
+                  <span
+                    class="swatch"
+                    style="--swatch-color: #f5f5f5"
+                    title="White"
+                  ></span>
+                  <span
+                    class="swatch"
+                    style="--swatch-color: #7a8b99"
+                    title="Silver"
+                  ></span>
+                  <span
+                    class="swatch"
+                    style="--swatch-color: #2d4a6f"
+                    title="Blue"
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Model Card 2 -->
+            <div class="model-card">
+              <div class="model-card-inner">
+                <img
+                  src="images/general/box-preview.png"
+                  alt="DongFeng Box"
+                  class="model-bg"
+                />
+                <div class="model-header">
+                  <h3 class="model-name">Box</h3>
+                  <span class="model-category"
+                    >Breaking Barriers to EV Fun</span
+                  >
+                </div>
+                <div class="model-specs-overlay">
+                  <div class="spec-row">
+                    <span class="spec-label">Range</span>
+                    <span class="spec-value">430 km</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">Battery</span>
+                    <span class="spec-value">70 kWh</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">Charging</span>
+                    <span class="spec-value">25 min</span>
+                  </div>
+                </div>
+                <div class="model-content">
+                  <div class="model-actions">
+                    <a href="#" class="btn btn-primary">Test Drive</a>
+                    <a href="box.html" class="btn btn-secondary">Learn More</a>
+                  </div>
+                </div>
+                <div class="model-swatches">
+                  <span
+                    class="swatch"
+                    style="--swatch-color: #f5f5f5"
+                    title="White"
+                  ></span>
+                  <span
+                    class="swatch"
+                    style="--swatch-color: #e8dfd0"
+                    title="Cream"
+                  ></span>
+                  <span
+                    class="swatch"
+                    style="--swatch-color: #5b9a8b"
+                    title="Green"
+                  ></span>
+                  <span
+                    class="swatch"
+                    style="--swatch-color: #f4a460"
+                    title="Orange"
+                  ></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Model Card 3 -->
+            <div class="model-card">
+              <div class="model-card-inner">
+                <img
+                  src="images/general/vigo-preview.png"
+                  alt="DongFeng Vigo"
+                  class="model-bg"
+                />
+                <div class="model-header">
+                  <h3 class="model-name">Vigo</h3>
+                  <span class="model-category"
+                    >Breaking Barriers to EV Versatility</span
+                  >
+                </div>
+                <div class="model-specs-overlay">
+                  <div class="spec-row">
+                    <span class="spec-label">Range</span>
+                    <span class="spec-value">580 km</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">Battery</span>
+                    <span class="spec-value">120 kWh</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">Charging</span>
+                    <span class="spec-value">22 min</span>
+                  </div>
+                </div>
+                <div class="model-content">
+                  <div class="model-actions">
+                    <a href="#" class="btn btn-primary">Test Drive</a>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                  </div>
+                </div>
+                <div class="model-swatches">
+                  <span
+                    class="swatch"
+                    style="--swatch-color: #1a1a1a"
+                    title="Black"
+                  ></span>
+                  <span
+                    class="swatch"
+                    style="--swatch-color: #f5f5f5"
+                    title="White"
+                  ></span>
+                  <span
+                    class="swatch"
+                    style="--swatch-color: #4a4a4a"
+                    title="Gray"
+                  ></span>
+                  <span
+                    class="swatch"
+                    style="--swatch-color: #8b2942"
+                    title="Red"
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider-btn next" aria-label="Next">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="9,18 15,12 9,6"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <div class="slider-dots">
+          <button class="dot active" aria-label="Slide 1"></button>
+          <button class="dot" aria-label="Slide 2"></button>
+          <button class="dot" aria-label="Slide 3"></button>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>
+              Breaking Barriers To A New Era Of Mobility In South Africa
+            </h2>
+            <a href="#book" class="btn btn-primary">Book A Test Drive</a>
+          </div>
+
+          <div class="about-right">
+            <p>
+              With over 55 years of global expertise and partnerships with some
+              of the world's leading automakers, Dongfeng now brings
+              groundbreaking innovation, visionary mobility, and advanced
+              technology to South Africa. Dongfeng is here to help South
+              Africans drive without compromise.
+            </p>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-value">
+                  <span class="stat-number" data-target="2.5">0</span>
+                  <span class="stat-suffix">m</span>
+                </div>
+                <span class="stat-label">Cars Sold Annually</span>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">
+                  <span class="stat-number" data-target="100">0</span>
+                  <span class="stat-suffix">+</span>
+                </div>
+                <span class="stat-label">Countries Covered</span>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">
+                  <span class="stat-prefix">$</span>
+                  <span class="stat-number" data-target="14">0</span>
+                  <span class="stat-suffix">b</span>
+                </div>
+                <span class="stat-label">Research & Development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Info Section -->
+      <section id="services" class="info-section">
+        <div class="info-content">
+          <div class="info-text">
+            <h2>Engineered for Tomorrow</h2>
+            <p>
+              At DongFeng, we believe that sustainable transportation shouldn't
+              compromise on performance or luxury. Our vehicles are meticulously
+              engineered using cutting-edge technology and premium materials.
+            </p>
+            <p>
+              From advanced battery systems to intelligent driving assistance,
+              every DongFeng vehicle represents the pinnacle of electric vehicle
+              innovation.
+            </p>
+            <a href="#" class="btn btn-primary">Book a Test Drive</a>
+          </div>
+          <div class="info-image">
+            <img src="images/general/tech-image.jpg" alt="DongFeng Technology" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Safety Section -->
+      <section class="safety-section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Safety First</h2>
+            <p>
+              Your protection is our priority. Every DongFeng vehicle is
+              equipped with advanced safety features.
+            </p>
+          </div>
+
+          <div class="safety-grid">
+            <div class="safety-card">
+              <div class="safety-image">
+                <img
+                  src="images/general/Adaptive-Cruise-Control-ACC.gif"
+                  alt="Adaptive Cruise Control"
+                />
+              </div>
+              <div class="safety-content">
+                <h3 class="safety-title">Adaptive Cruise Control</h3>
+                <p class="safety-description">
+                  Automatically adjusts your speed to maintain a safe distance
+                  from the vehicle ahead, making highway driving effortless and
+                  safe.
+                </p>
+              </div>
+            </div>
+
+            <div class="safety-card">
+              <div class="safety-image">
+                <img src="images/general/Brake-Assist.gif" alt="Brake Assist" />
+              </div>
+              <div class="safety-content">
+                <h3 class="safety-title">Brake Assist</h3>
+                <p class="safety-description">
+                  Detects emergency braking situations and applies maximum
+                  braking force to help reduce stopping distance and avoid
+                  collisions.
+                </p>
+              </div>
+            </div>
+
+            <div class="safety-card">
+              <div class="safety-image">
+                <img
+                  src="images/general/Lane-Departure-Warning-LDW.gif"
+                  alt="Lane Departure Warning"
+                />
+              </div>
+              <div class="safety-content">
+                <h3 class="safety-title">Lane Departure Warning</h3>
+                <p class="safety-description">
+                  Monitors lane markings and alerts you when the vehicle begins
+                  to drift out of its lane without signaling.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact CTA Section -->
+      <section id="contact" class="contact-section">
+        <div class="contact-content">
+          <div class="contact-text">
+            <h2>Ready to Experience DongFeng?</h2>
+            <p>
+              Get in touch with our team to schedule a test drive or learn more
+              about our electric vehicles.
+            </p>
+            <div class="contact-actions">
+              <a href="#book" class="btn btn-primary">Book a Test Drive</a>
+              <a href="#" class="btn btn-secondary">Contact Us</a>
+            </div>
+          </div>
+          <div class="contact-image">
+            <img src="images/general/bottom-cta.jpg" alt="DongFeng Electric Vehicle" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <span class="logo-text">DongFeng</span>
+            <p class="footer-tagline">Driving the electric future.</p>
+          </div>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Careers</a>
+          </div>
+          <p class="footer-copyright">
+            &copy; 2026 DongFeng. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
