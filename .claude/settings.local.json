@@ -1,7 +1,15 @@
 {
   "permissions": {
     "allow": [
-      "Bash(dir /s /b \"c:\\\\Users\\\\user\\\\Desktop\\\\DongFeng\\\\images\\\\models\\\\box\")"
+      "Bash(dir /s /b \"c:\\\\Users\\\\user\\\\Desktop\\\\DongFeng\\\\images\\\\models\\\\box\")",
+      "Bash(dir:*)",
+      "Bash(git add:*)",
+      "Bash(git restore:*)",
+      "Bash(del \"\\\\?\\\\c:\\\\Users\\\\user\\\\Desktop\\\\DongFeng\\\\nul\")",
+      "Bash(cmd.exe /c \"del /f /q \\\\?\\\\c:\\\\Users\\\\user\\\\Desktop\\\\DongFeng\\\\nul\")",
+      "Bash(python -c \"import os; os.remove\\(''\\\\\\\\?\\\\c:\\\\Users\\\\user\\\\Desktop\\\\DongFeng\\\\nul''\\)\")",
+      "Bash(powershell.exe -Command \"Remove-Item -Path ''\\\\?\\\\c:\\\\Users\\\\user\\\\Desktop\\\\DongFeng\\\\nul'' -Force\")",
+      "Bash(powershell.exe -Command \"Remove-Item -LiteralPath ''\\\\?\\\\c:\\\\Users\\\\user\\\\Desktop\\\\DongFeng\\\\nul'' -Force\")"
     ]
   }
 }

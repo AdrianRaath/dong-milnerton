@@ -1,0 +1,319 @@
+/**
+ * Contact Page Styles
+ * Layout for contact form, details, and trading hours
+ */
+
+/* ===========================================
+   Contact Hero
+   =========================================== */
+
+.contact-hero {
+  padding-top: 80px;
+  background-color: var(--color-white);
+}
+
+.contact-hero-content {
+  text-align: center;
+  padding: var(--space-16) var(--container-padding) var(--space-10);
+}
+
+.contact-hero-title {
+  font-size: var(--text-5xl);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  letter-spacing: var(--tracking-tight);
+  margin-bottom: var(--space-2);
+}
+
+.contact-hero-tagline {
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+}
+
+/* ===========================================
+   Contact Layout
+   =========================================== */
+
+.contact-page-section {
+  padding: var(--space-16) 0 var(--space-20);
+  background-color: var(--bg-primary);
+}
+
+.contact-page-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-20);
+  align-items: start;
+}
+
+/* ===========================================
+   Contact Details (Left)
+   =========================================== */
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.contact-detail-group,
+.trading-hours-group {
+  background-color: var(--color-gray-50, #f9fafb);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+}
+
+.contact-detail-group h2 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-6);
+}
+
+.contact-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.contact-detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-detail-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-white);
+  color: var(--text-primary);
+  border: 1px solid var(--text-primary);
+}
+
+.contact-detail-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact-detail-label {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--text-primary);
+}
+
+.contact-detail-value {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+.contact-detail-value a {
+  color: var(--color-brand);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.contact-detail-value a:hover {
+  color: var(--color-brand);
+}
+
+/* ===========================================
+   Trading Hours
+   =========================================== */
+
+.trading-hours-group h2 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-6);
+}
+
+.trading-hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.trading-hours-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.trading-hours-row:last-child {
+  border-bottom: none;
+}
+
+.trading-hours-day {
+  font-size: var(--text-base);
+  font-weight: var(--font-medium);
+  color: var(--text-primary);
+}
+
+.trading-hours-time {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+}
+
+.trading-hours-time.closed {
+  color: var(--color-brand);
+  font-weight: var(--font-medium);
+}
+
+/* ===========================================
+   Contact Form (Right)
+   =========================================== */
+
+.contact-form-block {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+}
+
+.contact-form-block h2 {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.contact-form-subtitle {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-8);
+}
+
+.contact-page-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.cp-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.cp-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.cp-form-group label {
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--text-primary);
+}
+
+.cp-form-group input,
+.cp-form-group select,
+.cp-form-group textarea {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-gray-300);
+  border-radius: var(--radius-md);
+  font-size: var(--text-base);
+  font-family: inherit;
+  color: var(--text-primary);
+  background-color: var(--color-white);
+  box-sizing: border-box;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.cp-form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.cp-form-group input:focus,
+.cp-form-group select:focus,
+.cp-form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.1);
+}
+
+.cp-form-group input::placeholder,
+.cp-form-group textarea::placeholder {
+  color: var(--text-tertiary);
+}
+
+.cp-btn-full {
+  width: 100%;
+  margin-top: var(--space-2);
+}
+
+/* ===========================================
+   Responsive
+   =========================================== */
+
+@media (max-width: 1024px) {
+  .contact-hero-title {
+    font-size: var(--text-4xl);
+  }
+
+  .contact-page-grid {
+    gap: var(--space-10);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero-content {
+    padding: var(--space-12) var(--container-padding) var(--space-8);
+  }
+
+  .contact-hero-title {
+    font-size: var(--text-3xl);
+  }
+
+  .contact-hero-tagline {
+    font-size: var(--text-base);
+  }
+
+  .contact-page-section {
+    padding: var(--space-12) 0 var(--space-16);
+  }
+
+  .contact-page-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  .contact-detail-group h2,
+  .trading-hours-group h2,
+  .contact-form-block h2 {
+    font-size: var(--text-xl);
+  }
+
+  .cp-form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero-content {
+    padding: var(--space-10) var(--space-4) var(--space-6);
+  }
+
+  .contact-hero-title {
+    font-size: var(--text-2xl);
+  }
+
+  .contact-hero-tagline {
+    font-size: var(--text-sm);
+  }
+
+  .contact-form-block {
+    padding: var(--space-6);
+  }
+}

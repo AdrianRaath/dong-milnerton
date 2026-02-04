@@ -61,6 +61,27 @@
 }
 
 /* ===========================================
+   Footer Secondary Links
+   =========================================== */
+
+.footer-secondary-links {
+    display: flex;
+    gap: var(--space-6);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-secondary-links a {
+    font-size: var(--text-xs);
+    color: var(--color-gray-500);
+    transition: color var(--transition-fast);
+}
+
+.footer-secondary-links a:hover {
+    color: var(--text-inverse-secondary);
+}
+
+/* ===========================================
    Footer Copyright
    =========================================== */
 

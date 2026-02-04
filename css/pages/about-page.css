@@ -1,0 +1,265 @@
+/**
+ * About Page Styles
+ * Styles for the about/dealership page
+ */
+
+/* ===========================================
+   About Hero Section
+   =========================================== */
+
+.about-hero {
+  padding-top: 80px;
+  background-color: var(--color-white);
+}
+
+.about-hero-content {
+  text-align: center;
+  padding: var(--space-16) var(--container-padding) var(--space-10);
+}
+
+.about-hero-title {
+  font-size: var(--text-5xl);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  letter-spacing: var(--tracking-tight);
+  margin-bottom: var(--space-2);
+}
+
+.about-hero-tagline {
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+}
+
+.about-hero-image {
+  width: 100%;
+}
+
+.about-hero-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+}
+
+/* ===========================================
+   About Content Sections
+   =========================================== */
+
+.about-section {
+  padding: var(--space-20) 0;
+  background-color: var(--bg-primary);
+}
+
+.about-section-alt {
+  background-color: var(--color-gray-50, #f9fafb);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+.about-grid-reverse {
+  direction: rtl;
+}
+
+.about-grid-reverse > * {
+  direction: ltr;
+}
+
+.about-text-block h2 {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-6);
+}
+
+.about-text-block p {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-4);
+}
+
+.about-text-block p:last-child {
+  margin-bottom: 0;
+}
+
+.about-image-block {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.about-image-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+/* ===========================================
+   Values Section
+   =========================================== */
+
+.about-values {
+  padding: var(--space-20) 0;
+  background-color: var(--bg-primary);
+}
+
+.about-values-title {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: var(--space-4);
+}
+
+.about-values-subtitle {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto var(--space-12);
+  line-height: var(--leading-relaxed);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+}
+
+.value-card {
+  text-align: center;
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-gray-200);
+  transition: box-shadow var(--transition-base);
+}
+
+.value-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.value-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-brand);
+  color: var(--color-white);
+  margin-bottom: var(--space-4);
+}
+
+.value-card h3 {
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.value-card p {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+/* ===========================================
+   Responsive Styles
+   =========================================== */
+
+@media (max-width: 1024px) {
+  .about-hero-title {
+    font-size: var(--text-4xl);
+  }
+
+  .about-grid {
+    gap: var(--space-10);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero-content {
+    padding: var(--space-12) var(--container-padding) var(--space-8);
+  }
+
+  .about-hero-title {
+    font-size: var(--text-3xl);
+  }
+
+  .about-hero-tagline {
+    font-size: var(--text-base);
+  }
+
+  .about-hero-image img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .about-section {
+    padding: var(--space-16) 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .about-grid-reverse {
+    direction: ltr;
+  }
+
+  .about-image-block {
+    order: -1;
+  }
+
+  .about-text-block h2 {
+    font-size: var(--text-2xl);
+  }
+
+  .about-values {
+    padding: var(--space-16) 0;
+  }
+
+  .about-values-title {
+    font-size: var(--text-2xl);
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .value-card {
+    padding: var(--space-6);
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-content {
+    padding: var(--space-10) var(--space-4) var(--space-6);
+  }
+
+  .about-hero-title {
+    font-size: var(--text-2xl);
+  }
+
+  .about-hero-tagline {
+    font-size: var(--text-sm);
+  }
+
+  .about-hero-image img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .about-section {
+    padding: var(--space-12) 0;
+  }
+
+  .about-values {
+    padding: var(--space-12) 0;
+  }
+}

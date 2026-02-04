@@ -1,0 +1,29 @@
+{
+  "id": "vigo",
+  "name": "Vigo",
+  "pageTitle": "DongFeng Vigo | Electric Vehicles",
+
+  "card": {
+    "title": "Vigo",
+    "subtitle": "Breaking Barriers to EV Versatility",
+    "image": {
+      "src": "images/base/vigo-preview.png",
+      "alt": "DongFeng Vigo"
+    },
+    "specs": [
+      { "label": "Range", "value": "580 km" },
+      { "label": "Battery", "value": "120 kWh" },
+      { "label": "Charging", "value": "22 min" }
+    ],
+    "swatches": [
+      { "hex": "#748563", "title": "Green" },
+      { "hex": "#FD864C", "title": "Orange" },
+      { "hex": "#E0E1E4", "title": "Silver" },
+      { "hex": "#C6BBAC", "title": "Sand" },
+      { "hex": "#7B8186", "title": "Titanium" },
+      { "hex": "#2C2C2C", "title": "Black" }
+    ],
+    "status": "coming soon",
+    "pageUrl": null
+  }
+}

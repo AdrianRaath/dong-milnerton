@@ -276,13 +276,16 @@ function initSmoothScroll() {
 
 /**
  * Color Swatches
- * Handles color selection on model cards
+ * Handles color selection on model cards — swaps the card background image
  */
 function initColorSwatches() {
-    const swatchGroups = document.querySelectorAll('.color-swatches');
+    const cards = document.querySelectorAll('.model-card');
 
-    swatchGroups.forEach(group => {
-        const swatches = group.querySelectorAll('.swatch');
+    cards.forEach(card => {
+        const swatches = card.querySelectorAll('.model-swatches .swatch');
+        const cardImage = card.querySelector('.model-bg');
+
+        if (!swatches.length || !cardImage) return;
 
         swatches.forEach(swatch => {
             swatch.addEventListener('click', () => {
@@ -291,10 +294,18 @@ function initColorSwatches() {
                 // Add active to clicked
                 swatch.classList.add('active');
 
-                // Optional: You could emit an event or update the card image here
-                // const color = swatch.getAttribute('aria-label');
-                // const card = swatch.closest('.model-card');
-                // updateCardImage(card, color);
+                // Swap card image with fade
+                const newSrc = swatch.dataset.image;
+                const colorName = swatch.title;
+
+                if (newSrc) {
+                    cardImage.style.opacity = '0';
+                    setTimeout(() => {
+                        cardImage.src = newSrc;
+                        cardImage.alt = `${card.querySelector('.model-name').textContent} in ${colorName}`;
+                        cardImage.style.opacity = '1';
+                    }, 150);
+                }
             });
         });
     });

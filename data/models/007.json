@@ -1,0 +1,252 @@
+{
+  "id": "007",
+  "name": "007",
+  "pageTitle": "DongFeng 007 | Electric Vehicles",
+
+  "hero": {
+    "title": "007",
+    "tagline": "Precision Performance, Redefined",
+    "backgroundImage": "images/car-models/007/hero/hero.avif",
+    "buttons": {
+      "primary": {
+        "text": "Book Test Drive",
+        "textShort": "Test Drive",
+        "href": "#book"
+      },
+      "secondary": {
+        "text": "Explore 007",
+        "textShort": "Explore",
+        "href": "#exterior"
+      }
+    }
+  },
+
+  "intro": {
+    "title": "Meet the 007",
+    "paragraphs": [
+      "The DongFeng 007 is engineered for those who demand more from every drive. With a striking silhouette and commanding road presence, the 007 delivers executive-level refinement paired with exhilarating electric performance.",
+      "From the boardroom to the open road, the 007 combines rapid acceleration, long-range capability and cutting-edge technology into a seamless driving experience that sets a new benchmark for electric sedans."
+    ],
+    "stats": [
+      { "value": "430", "unit": "km", "label": "Max Range" },
+      { "value": "375", "unit": "kW", "label": "Power Output" },
+      { "value": "26", "unit": "min", "label": "Charging Time" }
+    ],
+    "image": {
+      "src": "images/car-models/007/intro/intro.avif",
+      "alt": "DongFeng 007 Interior"
+    }
+  },
+
+  "sections": [
+    {
+      "type": "features",
+      "id": "exterior",
+      "title": "Sculpted for Impact",
+      "features": [
+        {
+          "title": "Crystal LED Headlights",
+          "description": "Bold, angular LED headlights cut through the darkness with razor-sharp clarity, giving the 007 an unmistakable front-end identity that commands attention day and night.",
+          "image": {
+            "src": "images/car-models/007/exterior/crystal-led-headlights.avif",
+            "alt": "Crystal LED Headlights"
+          }
+        },
+        {
+          "title": "Interactive Tail Lights",
+          "description": "Dynamic LED tail lights respond to driving conditions with animated sequences, creating a signature light show that enhances visibility and leaves a lasting impression.",
+          "image": {
+            "src": "images/car-models/007/exterior/interactive-tail-lights.avif",
+            "alt": "Interactive Tail Lights"
+          }
+        },
+        {
+          "title": "Sleek Frameless Doors",
+          "description": "Frameless door architecture lends the 007 a streamlined profile, reducing wind noise at speed while delivering an effortlessly premium feel every time you step inside.",
+          "image": {
+            "src": "images/car-models/007/exterior/sleek-frameless-doors.avif",
+            "alt": "Sleek Frameless Doors"
+          }
+        },
+        {
+          "title": "Flush Door Handles",
+          "description": "Aerodynamically integrated flush handles deploy with a tap, maintaining the 007's clean body lines and contributing to reduced drag for improved efficiency.",
+          "image": {
+            "src": "images/car-models/007/exterior/flush-door-handles.avif",
+            "alt": "Flush Door Handles"
+          }
+        }
+      ]
+    },
+    {
+      "type": "colors",
+      "id": "colors",
+      "title": "Choose Your Statement",
+      "subtitle": "From understated elegance to bold confidence, find the shade that matches your character.",
+      "basePath": "images/car-models/007/colors",
+      "defaultColor": "white",
+      "colors": [
+        { "name": "white", "hex": "#F9F9F9", "title": "White" },
+        { "name": "silver", "hex": "#DEDEDE", "title": "Silver" },
+        { "name": "grey", "hex": "#6C6C6C", "title": "Grey" },
+        { "name": "black", "hex": "#000000", "title": "Black" }
+      ]
+    },
+    {
+      "type": "features",
+      "id": "smart",
+      "title": "Smarter Than It Looks",
+      "features": [
+        {
+          "title": "Central Control System",
+          "description": "A sweeping high-resolution touchscreen places every vehicle function at your fingertips, from navigation and media to climate and vehicle settings, all through an intuitive interface.",
+          "image": {
+            "src": "images/car-models/007/smart/central-control-system.avif",
+            "alt": "Central Control System"
+          }
+        },
+        {
+          "title": "WANOS Audio System",
+          "description": "Immerse yourself in concert-quality sound with the WANOS surround audio system, delivering rich, detailed acoustics precisely tuned to the cabin's dimensions.",
+          "image": {
+            "src": "images/car-models/007/smart/wanos-audio-system.avif",
+            "alt": "WANOS Audio System"
+          }
+        },
+        {
+          "title": "Wireless Phone Charger",
+          "description": "Drop your phone onto the integrated charging pad and stay powered throughout every journey, no cables, no fuss, just seamless convenience.",
+          "image": {
+            "src": "images/car-models/007/smart/wireless-phone-charger.avif",
+            "alt": "Wireless Phone Charger"
+          }
+        },
+        {
+          "title": "Fast Charging",
+          "description": "With ultra-rapid DC charging support, the 007 recovers substantial range in minutes, turning a quick stop into hundreds of additional kilometres.",
+          "image": {
+            "src": "images/car-models/007/smart/fast-charging.avif",
+            "alt": "Fast Charging"
+          }
+        },
+        {
+          "title": "Electric Hatch Liftgate",
+          "description": "A hands-free electric liftgate opens and closes at the tap of a button or a wave of your foot, making loading and unloading effortless even with your hands full.",
+          "image": {
+            "src": "images/car-models/007/smart/electric-hatch-liftgate.avif",
+            "alt": "Electric Hatch Liftgate"
+          }
+        }
+      ]
+    },
+    {
+      "type": "safety",
+      "id": "safety",
+      "title": "Confidence at Every Turn",
+      "subtitle": "The 007 wraps you in layers of intelligent protection, anticipating hazards before they become a threat.",
+      "features": [
+        {
+          "title": "Adaptive Cruise Control",
+          "description": "Automatically adjusts your cruising speed to match traffic flow, maintaining a safe following distance so you can cover long distances with reduced fatigue.",
+          "image": {
+            "src": "images/car-models/007/safety/adaptive-cruise-control.gif",
+            "alt": "Adaptive Cruise Control"
+          }
+        },
+        {
+          "title": "Intelligent Brake Assist",
+          "description": "When the system detects an imminent collision, it pre-charges the brakes and applies maximum stopping force to help you avoid or minimise impact.",
+          "image": {
+            "src": "images/car-models/007/safety/intelligent-brake-assist.gif",
+            "alt": "Intelligent Brake Assist"
+          }
+        },
+        {
+          "title": "Lane Departure Warning",
+          "description": "Continuously tracks road markings and gently alerts you if the vehicle drifts from its lane without a turn signal, keeping you safely on course.",
+          "image": {
+            "src": "images/car-models/007/safety/lane-departure-warning.gif",
+            "alt": "Lane Departure Warning"
+          }
+        }
+      ]
+    },
+    {
+      "type": "features",
+      "id": "comfort",
+      "title": "First Class, Every Seat",
+      "features": [
+        {
+          "title": "Comfy Eco Friendly Cabin",
+          "description": "Step into a cabin where premium recycled materials and soft-touch surfaces create an environment that feels luxurious while respecting the planet.",
+          "image": {
+            "src": "images/car-models/007/comfort/comfy-eco-friendly-cabin.avif",
+            "alt": "Comfy Eco Friendly Cabin"
+          }
+        },
+        {
+          "title": "Colour Ambient Lighting",
+          "description": "Set the mood with a spectrum of customisable ambient lighting that bathes the cabin in colour, transforming the atmosphere to suit your drive.",
+          "image": {
+            "src": "images/car-models/007/comfort/color-ambient-lighting.avif",
+            "alt": "Colour Ambient Lighting"
+          }
+        },
+        {
+          "title": "Leather Steering Wheel",
+          "description": "A hand-stitched leather steering wheel offers a refined grip and tactile feedback, putting precise control and everyday comfort right at your fingertips.",
+          "image": {
+            "src": "images/car-models/007/comfort/leather-steering-wheel.avif",
+            "alt": "Leather Steering Wheel"
+          }
+        },
+        {
+          "title": "Piano Lacquer Finish Buttons",
+          "description": "Glossy piano lacquer trim on the centre console buttons adds a touch of sophistication, elevating the interior with a detail that looks and feels premium.",
+          "image": {
+            "src": "images/car-models/007/comfort/piano-laquer-finish-buttons.avif",
+            "alt": "Piano Lacquer Finish Buttons"
+          }
+        }
+      ]
+    }
+  ],
+
+  "cta": {
+    "title": "Experience the 007 for Yourself",
+    "subtitle": "Ready to feel the difference? Book a test drive today and discover a new standard of electric performance.",
+    "buttonText": "Book a Test Drive",
+    "buttonHref": "#book",
+    "image": {
+      "src": "images/car-models/007/cta/cta-image.avif",
+      "alt": "DongFeng 007"
+    }
+  },
+
+  "modal": {
+    "title": "Book a Test Drive",
+    "subtitle": "Experience the 007 for yourself. Fill in your details and we'll be in touch."
+  },
+
+  "card": {
+    "title": "007",
+    "subtitle": "Breaking Barriers to EV Performance",
+    "image": {
+      "src": "images/base/007-preview.png",
+      "alt": "DongFeng 007"
+    },
+    "specs": [
+      { "label": "Range", "value": "620 km" },
+      { "label": "Battery", "value": "100 kWh" },
+      { "label": "Charging", "value": "18 min" }
+    ],
+    "swatches": [
+      { "hex": "#F9F9F9", "title": "White" },
+      { "hex": "#DEDEDE", "title": "Silver" },
+      { "hex": "#6C6C6C", "title": "Grey" },
+      { "hex": "#000000", "title": "Black" }
+    ],
+    "status": "available",
+    "pageUrl": "007.html"
+  }
+}

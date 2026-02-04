@@ -1,0 +1,258 @@
+{
+  "id": "box",
+  "name": "Box",
+  "pageTitle": "DongFeng Box | Electric Vehicles",
+
+  "hero": {
+    "title": "Box",
+    "tagline": "Breaking Barriers to EV Fun",
+    "backgroundImage": "images/car-models/box/hero/hero.avif",
+    "buttons": {
+      "primary": {
+        "text": "Book Test Drive",
+        "textShort": "Test Drive",
+        "href": "#book"
+      },
+      "secondary": {
+        "text": "Explore Box",
+        "textShort": "Explore",
+        "href": "#exterior"
+      }
+    }
+  },
+
+  "intro": {
+    "title": "Meet the Box",
+    "paragraphs": [
+      "The DongFeng Box redefines urban mobility with its bold, distinctive design and compact footprint. Perfect for city driving, this all-electric vehicle combines playful aesthetics with practical performance.",
+      "With a range that handles your daily commute and weekend adventures, the Box delivers everything you need in an eco-friendly package that stands out from the crowd."
+    ],
+    "stats": [
+      { "value": "430", "unit": "km", "label": "Range" },
+      { "value": "70", "unit": "kWh", "label": "Battery Capacity" },
+      { "value": "25", "unit": "min", "label": "Charging Time" }
+    ],
+    "image": {
+      "src": "images/car-models/box/intro/intro.avif",
+      "alt": "DongFeng Box Interior"
+    }
+  },
+
+  "sections": [
+    {
+      "type": "features",
+      "id": "exterior",
+      "title": "Design That Stands Out",
+      "features": [
+        {
+          "title": "Crystal LED Headlights",
+          "description": "Precision-engineered LED headlights deliver exceptional visibility while adding a distinctive, modern aesthetic to the front profile.",
+          "image": {
+            "src": "images/car-models/box/exterior/crystal-led-headlights.avif",
+            "alt": "Crystal LED Headlights"
+          }
+        },
+        {
+          "title": "Sleek Frameless Doors",
+          "description": "Elegant frameless door design enhances the vehicle's aerodynamic profile while providing a premium, sophisticated entry experience.",
+          "image": {
+            "src": "images/car-models/box/exterior/sleek-frameless-doors.avif",
+            "alt": "Sleek Frameless Doors"
+          }
+        },
+        {
+          "title": "Custom Sport Rims",
+          "description": "Lightweight alloy sport rims combine stunning visual appeal with optimized aerodynamics for improved range and performance.",
+          "image": {
+            "src": "images/car-models/box/exterior/custom-sport-rims.avif",
+            "alt": "Custom Sport Rims"
+          }
+        },
+        {
+          "title": "Flush Door Handles",
+          "description": "Seamlessly integrated flush door handles sit perfectly level with the body, reducing drag while adding a sleek, modern touch to the exterior design.",
+          "image": {
+            "src": "images/car-models/box/exterior/flush-door-handles.avif",
+            "alt": "Flush Door Handles"
+          }
+        }
+      ]
+    },
+    {
+      "type": "colors",
+      "id": "colors",
+      "title": "Find Your Perfect Colour",
+      "subtitle": "Select from a range of stunning colours to match your style.",
+      "basePath": "images/car-models/box/colors",
+      "defaultColor": "white",
+      "colors": [
+        { "name": "white", "hex": "#F9F9F9", "title": "White" },
+        { "name": "silver", "hex": "#9FA6AE", "title": "Silver" },
+        { "name": "blue", "hex": "#426988", "title": "Blue" },
+        { "name": "green", "hex": "#CFE02A", "title": "Green" },
+        { "name": "red", "hex": "#C32C35", "title": "Red" },
+        { "name": "purple", "hex": "#8B69A1", "title": "Purple" },
+        { "name": "pink", "hex": "#CEA6AF", "title": "Pink" }
+      ]
+    },
+    {
+      "type": "features",
+      "id": "smart",
+      "title": "Intelligent by Design",
+      "features": [
+        {
+          "title": "Wireless Phone Charger",
+          "description": "Conveniently charge your compatible smartphone without cables using the integrated wireless charging pad.",
+          "image": {
+            "src": "images/car-models/box/smart/wireless-phone-charger.avif",
+            "alt": "Wireless Phone Charger"
+          }
+        },
+        {
+          "title": "Designer Smart Key",
+          "description": "A beautifully crafted smart key that combines elegant design with seamless keyless entry and start functionality.",
+          "image": {
+            "src": "images/car-models/box/smart/designer-smart-key.avif",
+            "alt": "Designer Smart Key"
+          }
+        },
+        {
+          "title": "Fast Charging",
+          "description": "Get back on the road quickly with ultra-fast charging capability that minimizes downtime on longer journeys.",
+          "image": {
+            "src": "images/car-models/box/smart/fast-charging.avif",
+            "alt": "Fast Charging"
+          }
+        },
+        {
+          "title": "Mood Memory",
+          "description": "Your perfect environment, remembered. Save personalised settings for climate, seat position, music, ambient lighting and windshield defrosting that restore automatically each time you drive.",
+          "image": {
+            "src": "images/car-models/box/smart/mood-memory.avif",
+            "alt": "Mood Memory"
+          }
+        }
+      ]
+    },
+    {
+      "type": "safety",
+      "id": "safety",
+      "title": "Safety First",
+      "subtitle": "Your protection is our priority. The Box is equipped with advanced safety features.",
+      "features": [
+        {
+          "title": "Adaptive Cruise Control",
+          "description": "Automatically adjusts your speed to maintain a safe distance from the vehicle ahead, making highway driving effortless and safe.",
+          "image": {
+            "src": "images/car-models/box/safety/adaptive-cruise-control.gif",
+            "alt": "Adaptive Cruise Control"
+          }
+        },
+        {
+          "title": "Intelligent Brake Assist",
+          "description": "Detects emergency braking situations and applies maximum braking force to help reduce stopping distance and avoid collisions.",
+          "image": {
+            "src": "images/car-models/box/safety/intelligent-brake-assist.gif",
+            "alt": "Intelligent Brake Assist"
+          }
+        },
+        {
+          "title": "Lane Departure Warning",
+          "description": "Monitors lane markings and alerts you when the vehicle begins to drift out of its lane without signaling.",
+          "image": {
+            "src": "images/car-models/box/safety/lane-departure-warning.gif",
+            "alt": "Lane Departure Warning"
+          }
+        }
+      ]
+    },
+    {
+      "type": "features",
+      "id": "comfort",
+      "title": "Comfort Without Compromise",
+      "features": [
+        {
+          "title": "Comfy Eco Friendly Cabin",
+          "description": "Sustainable materials meet premium comfort in a thoughtfully designed cabin that's as kind to the environment as it is to passengers.",
+          "image": {
+            "src": "images/car-models/box/comfort/comfy-eco-friendly-cabin.avif",
+            "alt": "Comfy Eco Friendly Cabin"
+          }
+        },
+        {
+          "title": "Multifunction Steering Wheel",
+          "description": "Keep your hands on the wheel and eyes on the road with intuitive controls for audio, phone, and driver assistance features.",
+          "image": {
+            "src": "images/car-models/box/comfort/multifucntion-steering-wheel.avif",
+            "alt": "Multifunction Steering Wheel"
+          }
+        },
+        {
+          "title": "Smart Discreet Storage",
+          "description": "Clever storage solutions throughout the cabin keep your essentials organized and within easy reach while maintaining a clean aesthetic.",
+          "image": {
+            "src": "images/car-models/box/comfort/smart-discreet-storage.avif",
+            "alt": "Smart Discreet Storage"
+          }
+        },
+        {
+          "title": "One Touch Seat Reclining",
+          "description": "Effortlessly adjust your seating position with one-touch reclining controls, making it easy to find your perfect driving posture or relax during charging stops.",
+          "image": {
+            "src": "images/car-models/box/comfort/one-touch-seat-reclining.avif",
+            "alt": "One Touch Seat Reclining"
+          }
+        },
+        {
+          "title": "Spacious Back Seats",
+          "description": "Generous rear legroom and thoughtful ergonomics ensure passengers in the back enjoy the same level of comfort as those up front.",
+          "image": {
+            "src": "images/car-models/box/comfort/spacious-back-seats.avif",
+            "alt": "Spacious Back Seats"
+          }
+        }
+      ]
+    }
+  ],
+
+  "cta": {
+    "title": "Experience the Box for Yourself",
+    "subtitle": "Ready to see what makes the Box special? Book a test drive today and discover the joy of electric driving.",
+    "buttonText": "Book a Test Drive",
+    "buttonHref": "#book",
+    "image": {
+      "src": "images/car-models/box/cta/cta-image.avif",
+      "alt": "DongFeng Box"
+    }
+  },
+
+  "modal": {
+    "title": "Book a Test Drive",
+    "subtitle": "Experience the Box for yourself. Fill in your details and we'll be in touch."
+  },
+
+  "card": {
+    "title": "Box",
+    "subtitle": "Breaking Barriers to EV Fun",
+    "image": {
+      "src": "images/base/box-preview.png",
+      "alt": "DongFeng Box"
+    },
+    "specs": [
+      { "label": "Range", "value": "430 km" },
+      { "label": "Battery", "value": "70 kWh" },
+      { "label": "Charging", "value": "25 min" }
+    ],
+    "swatches": [
+      { "hex": "#F9F9F9", "title": "White" },
+      { "hex": "#9FA6AE", "title": "Silver" },
+      { "hex": "#426988", "title": "Blue" },
+      { "hex": "#CFE02A", "title": "Green" },
+      { "hex": "#C32C35", "title": "Red" },
+      { "hex": "#8B69A1", "title": "Purple" },
+      { "hex": "#CEA6AF", "title": "Pink" }
+    ],
+    "status": "available",
+    "pageUrl": "box.html"
+  }
+}
