@@ -2,6 +2,7 @@
   "id": "007",
   "name": "007",
   "pageTitle": "DongFeng 007 | Electric Vehicles",
+  "previewImage": "images/car-models/007/colors/black.avif",
 
   "hero": {
     "title": "007",
@@ -232,7 +233,7 @@
     "title": "007",
     "subtitle": "Breaking Barriers to EV Performance",
     "image": {
-      "src": "images/base/007-preview.png",
+      "src": "images/base/007-preview.avif",
       "alt": "DongFeng 007"
     },
     "specs": [

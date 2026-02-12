@@ -1,0 +1,30 @@
+{
+  "id": "nammi-06",
+  "name": "Nammi 06",
+  "pageTitle": "DongFeng Nammi 06 | Electric Vehicles",
+  "previewImage": "images/base/vigo-preview.avif",
+
+  "card": {
+    "title": "Nammi 06",
+    "subtitle": "Breaking Barriers to EV Versatility",
+    "image": {
+      "src": "images/base/vigo-preview.avif",
+      "alt": "DongFeng Nammi 06"
+    },
+    "specs": [
+      { "label": "Range", "value": "580 km" },
+      { "label": "Battery", "value": "120 kWh" },
+      { "label": "Charging", "value": "22 min" }
+    ],
+    "swatches": [
+      { "hex": "#748563", "title": "Green" },
+      { "hex": "#FD864C", "title": "Orange" },
+      { "hex": "#E0E1E4", "title": "Silver" },
+      { "hex": "#C6BBAC", "title": "Sand" },
+      { "hex": "#7B8186", "title": "Titanium" },
+      { "hex": "#2C2C2C", "title": "Black" }
+    ],
+    "status": "coming soon",
+    "pageUrl": null
+  }
+}

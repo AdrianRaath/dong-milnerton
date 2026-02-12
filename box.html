@@ -37,9 +37,75 @@
         <ul class="nav-menu">
           <li><a href="/" class="nav-link">Home</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="/#models" class="nav-link active">Models</a></li>
+          <li class="nav-dropdown">
+            <a href="#" class="nav-link active">Models</a>
+            <div class="nav-dropdown-panel">
+              <div class="nav-dropdown-grid">
+                <a href="007.html" class="nav-dropdown-item">
+                  <img src="images/car-models/007/colors/black.avif" alt="DongFeng 007" />
+                  <span class="nav-dropdown-name">007</span>
+                  <span class="btn btn-secondary">Learn More</span>
+                </a>
+                <a href="box.html" class="nav-dropdown-item">
+                  <img src="images/car-models/box/colors/blue.avif" alt="DongFeng Box" />
+                  <span class="nav-dropdown-name">Box</span>
+                  <span class="btn btn-secondary">Learn More</span>
+                </a>
+                <div class="nav-dropdown-item">
+                  <img src="images/base/vigo-preview.avif" alt="DongFeng Nammi 06" />
+                  <span class="nav-dropdown-name">Nammi 06</span>
+                  <span class="btn btn-secondary">Coming Soon</span>
+                </div>
+              </div>
+            </div>
+          </li>
           <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-mobile-cta">
+            <a href="#book" class="btn btn-primary nav-mobile-book">Book Test Drive</a>
+          </li>
         </ul>
+
+        <!-- Mobile Models Sub-Panel -->
+        <div class="nav-mobile-models">
+          <div class="nav-mobile-models-header">
+            <button class="nav-mobile-back" aria-label="Back to menu">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <span class="nav-mobile-models-title">Models</span>
+            <button class="nav-mobile-close" aria-label="Close menu">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+          </div>
+          <div class="nav-mobile-model-list">
+            <a href="007.html" class="nav-mobile-model-item">
+              <img src="images/car-models/007/colors/black.avif" alt="DongFeng 007" />
+              <div class="nav-mobile-model-info">
+                <span class="nav-mobile-model-name">007</span>
+                <div class="nav-mobile-model-links">
+                  <span>Learn More</span>
+                </div>
+              </div>
+            </a>
+            <a href="box.html" class="nav-mobile-model-item">
+              <img src="images/car-models/box/colors/blue.avif" alt="DongFeng Box" />
+              <div class="nav-mobile-model-info">
+                <span class="nav-mobile-model-name">Box</span>
+                <div class="nav-mobile-model-links">
+                  <span>Learn More</span>
+                </div>
+              </div>
+            </a>
+            <div class="nav-mobile-model-item">
+              <img src="images/base/vigo-preview.avif" alt="DongFeng Nammi 06" />
+              <div class="nav-mobile-model-info">
+                <span class="nav-mobile-model-name">Nammi 06</span>
+                <div class="nav-mobile-model-links">
+                  <span>Coming Soon</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <a href="#book" class="btn btn-primary nav-cta">Book Test Drive</a>
 
@@ -160,16 +226,16 @@
           <h2 class="color-section-title">Find Your Perfect Colour</h2>
           <p class="color-section-subtitle">Select from a range of stunning colours to match your style.</p>
           <div class="color-swatches">
-            <button class="color-swatch active" data-color="white" data-image="images/car-models/box/colors/white.png" title="White" style="--swatch-color: #F9F9F9"></button>
-            <button class="color-swatch" data-color="silver" data-image="images/car-models/box/colors/silver.png" title="Silver" style="--swatch-color: #9FA6AE"></button>
-            <button class="color-swatch" data-color="blue" data-image="images/car-models/box/colors/blue.png" title="Blue" style="--swatch-color: #426988"></button>
-            <button class="color-swatch" data-color="green" data-image="images/car-models/box/colors/green.png" title="Green" style="--swatch-color: #CFE02A"></button>
-            <button class="color-swatch" data-color="red" data-image="images/car-models/box/colors/red.png" title="Red" style="--swatch-color: #C32C35"></button>
-            <button class="color-swatch" data-color="purple" data-image="images/car-models/box/colors/purple.png" title="Purple" style="--swatch-color: #8B69A1"></button>
-            <button class="color-swatch" data-color="pink" data-image="images/car-models/box/colors/pink.png" title="Pink" style="--swatch-color: #CEA6AF"></button>
+            <button class="color-swatch active" data-color="white" data-image="images/car-models/box/colors/white.avif" title="White" style="--swatch-color: #F9F9F9"></button>
+            <button class="color-swatch" data-color="silver" data-image="images/car-models/box/colors/silver.avif" title="Silver" style="--swatch-color: #9FA6AE"></button>
+            <button class="color-swatch" data-color="blue" data-image="images/car-models/box/colors/blue.avif" title="Blue" style="--swatch-color: #426988"></button>
+            <button class="color-swatch" data-color="green" data-image="images/car-models/box/colors/green.avif" title="Green" style="--swatch-color: #CFE02A"></button>
+            <button class="color-swatch" data-color="red" data-image="images/car-models/box/colors/red.avif" title="Red" style="--swatch-color: #C32C35"></button>
+            <button class="color-swatch" data-color="purple" data-image="images/car-models/box/colors/purple.avif" title="Purple" style="--swatch-color: #8B69A1"></button>
+            <button class="color-swatch" data-color="pink" data-image="images/car-models/box/colors/pink.avif" title="Pink" style="--swatch-color: #CEA6AF"></button>
           </div>
           <div class="color-display">
-            <img src="images/car-models/box/colors/white.png" alt="DongFeng Box in White" class="color-car-image" />
+            <img src="images/car-models/box/colors/white.avif" alt="DongFeng Box in White" class="color-car-image" />
           </div>
         </div>
       </section>
@@ -387,16 +453,12 @@
             <p class="td-modal-subtitle">Select the model you'd like to test drive.</p>
             <div class="model-select-grid">
               <button type="button" class="model-select-card" data-model="007">
-                <img src="images/base/007-preview.png" alt="DongFeng 007" />
+                <img src="images/car-models/007/colors/black.avif" alt="DongFeng 007" />
                 <span>007</span>
               </button>
               <button type="button" class="model-select-card" data-model="Box">
-                <img src="images/base/box-preview.png" alt="DongFeng Box" />
+                <img src="images/car-models/box/colors/blue.avif" alt="DongFeng Box" />
                 <span>Box</span>
-              </button>
-              <button type="button" class="model-select-card" data-model="Vigo">
-                <img src="images/base/vigo-preview.png" alt="DongFeng Vigo" />
-                <span>Vigo</span>
               </button>
             </div>
             <button type="button" class="btn btn-primary td-modal-next">Book My Test Drive</button>

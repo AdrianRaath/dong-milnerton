@@ -22,6 +22,7 @@ Location: `data/models/[model-name].json`
   "id": "model-id",
   "name": "Model Name",
   "pageTitle": "Page title for browser tab",
+  "previewImage": "images/car-models/model-id/colors/white.avif",
   "hero": { ... },
   "intro": { ... },
   "sections": [ ... ],
@@ -31,7 +32,7 @@ Location: `data/models/[model-name].json`
 }
 ```
 
-**Note:** The `card` section is independent from the landing page sections. A model can have just a `card` (e.g., Vigo - coming soon, no landing page yet) or both a `card` and full landing page content.
+**Note:** The `card` section is independent from the landing page sections. A model can have just a `card` (e.g., Nammi 06 - coming soon, no landing page yet) or both a `card` and full landing page content.
 
 ---
 
@@ -42,6 +43,7 @@ Location: `data/models/[model-name].json`
 | `id` | Unique identifier for the model (used in URLs, file naming) |
 | `name` | Display name of the model |
 | `pageTitle` | Full page title shown in browser tab |
+| `previewImage` | Image used for the model in the nav dropdown and test drive modal (typically a color variant) |
 
 ---
 
@@ -197,11 +199,11 @@ Creates a color selector with swatches and a car image that changes based on sel
 | `subtitle` | Text beneath heading |
 | `basePath` | Base folder path for color images |
 | `defaultColor` | Which color is selected by default (matches `name`) |
-| `colors[].name` | Color identifier (used for image filename: `{name}.png`) |
+| `colors[].name` | Color identifier (used for image filename: `{name}.avif`) |
 | `colors[].hex` | Hex color code for the swatch |
 | `colors[].title` | Display name shown on hover |
 
-**Image naming:** Color images should be named `{basePath}/{name}.png` (e.g., `images/car-models/box/colors/white.png`)
+**Image naming:** Color images should be named `{basePath}/{name}.avif` (e.g., `images/car-models/box/colors/white.avif`)
 
 ---
 
@@ -278,7 +280,7 @@ Controls how the model appears as a card in the home page model slider. This sec
   "title": "007",
   "subtitle": "Breaking Barriers to EV Performance",
   "image": {
-    "src": "images/base/007-preview.png",
+    "src": "images/base/007-preview.avif",
     "alt": "DongFeng 007"
   },
   "specs": [
@@ -310,7 +312,20 @@ Controls how the model appears as a card in the home page model slider. This sec
 | `status` | `"available"` or `"coming soon"` |
 | `pageUrl` | URL to the model's landing page (set to `null` if no page exists yet) |
 
-**Notes:**
+**Status behaviour:**
+
+When `status` is `"coming soon"`:
+- The model card's "Test Drive" and "Learn More" buttons are replaced with a single disabled "Coming Soon" button
+- The model is **excluded** from the test drive modal's model selection grid (on all pages)
+- The model is **excluded** from the `modelImages` map in `js/test-drive-modal.js`
+- `pageUrl` should be set to `null`
+
+When `status` is `"available"`:
+- The model card shows "Test Drive" (with `data-model` attribute) and "Learn More" (linking to `pageUrl`) buttons
+- The model appears in the test drive modal's model selection grid (on all pages)
+- The model must have an entry in the `modelImages` map in `js/test-drive-modal.js`
+
+**Other notes:**
 - The `card` section can exist without landing page sections (e.g., for "coming soon" models)
 - Card swatches may differ from the full color selector on the landing page (cards show a subset)
 - Card specs may differ from intro stats (cards can show different values/labels)
@@ -346,12 +361,20 @@ Controls how the model appears as a card in the home page model slider. This sec
    ├── safety/
    │   └── [feature-images].gif
    ├── colors/
-   │   └── [color].png
+   │   └── [color].avif
    └── cta/
        └── cta-image.avif
    ```
 
-4. **Request page generation** by asking Claude to read the JSON and create/update the HTML page.
+4. **Set the `card.status` field:**
+   - Use `"coming soon"` if the model doesn't have a landing page yet (set `pageUrl` to `null`)
+   - Use `"available"` once the landing page is ready (set `pageUrl` to the page filename)
+
+5. **Update shared components:**
+   - If `status` is `"available"`: add the model to the test drive modal grid on all pages, and add it to the `modelImages` map in `js/test-drive-modal.js`
+   - If `status` is `"coming soon"`: ensure the model is excluded from the test drive modal and `modelImages`
+
+6. **Request page generation** by asking Claude to read the JSON and create/update the HTML page.
 
 ---
 
@@ -359,7 +382,7 @@ Controls how the model appears as a card in the home page model slider. This sec
 
 - Use lowercase with hyphens: `crystal-led-headlights.avif`
 - Folders use lowercase with hyphens: `car-models/box/exterior/`
-- Color images: Use the color name as filename: `white.png`, `silver.png`
+- Color images: Use the color name as filename: `white.avif`, `silver.avif`
 - Safety features: Use `.gif` format for animated graphics
 - Other images: Prefer `.avif` format for best compression
 
@@ -407,5 +430,6 @@ When adding new section types in the future:
 
 | Date | Change |
 |------|--------|
-| 2026-02-03 | Added `card` section for home page model cards (007, Box, Vigo) |
+| 2026-02-12 | Added `previewImage` field — single source for nav dropdown and test drive modal images |
+| 2026-02-03 | Added `card` section for home page model cards (007, Box, Nammi 06) |
 | 2026-01-22 | Initial documentation created for model page JSON structure |

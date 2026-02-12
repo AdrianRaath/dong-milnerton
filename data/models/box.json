@@ -2,6 +2,7 @@
   "id": "box",
   "name": "Box",
   "pageTitle": "DongFeng Box | Electric Vehicles",
+  "previewImage": "images/car-models/box/colors/blue.avif",
 
   "hero": {
     "title": "Box",
@@ -235,7 +236,7 @@
     "title": "Box",
     "subtitle": "Breaking Barriers to EV Fun",
     "image": {
-      "src": "images/base/box-preview.png",
+      "src": "images/base/box-preview.avif",
       "alt": "DongFeng Box"
     },
     "specs": [
