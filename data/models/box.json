@@ -216,6 +216,79 @@
     }
   ],
 
+  "variantComparison": {
+    "title": "Compare Variants",
+    "subtitle": "See how each Box variant stacks up to find the perfect fit for your lifestyle.",
+    "variants": ["E1 330", "E2 330", "E2 430", "E3 430"],
+    "categories": [
+      {
+        "name": "Dimensions",
+        "specs": [
+          {
+            "label": "Length (mm)",
+            "values": ["4020", "4020", "4020", "4020"]
+          },
+          { "label": "Width (mm)", "values": ["1810", "1810", "1810", "1810"] },
+          {
+            "label": "Height (mm)",
+            "values": ["1570", "1570", "1570", "1570"]
+          },
+          {
+            "label": "Wheelbase (mm)",
+            "values": ["2663", "2663", "2663", "2663"]
+          }
+        ]
+      },
+      {
+        "name": "Powertrain",
+        "specs": [
+          {
+            "label": "Motor Type",
+            "values": [
+              "Permanent Magnet Synchronous",
+              "Permanent Magnet Synchronous",
+              "Permanent Magnet Synchronous",
+              "Permanent Magnet Synchronous"
+            ]
+          },
+          {
+            "label": "Drivetrain",
+            "values": [
+              "Front-Wheel Drive",
+              "Front-Wheel Drive",
+              "Front-Wheel Drive",
+              "Front-Wheel Drive"
+            ]
+          },
+          { "label": "Maximum Power (kW)", "values": ["70", "70", "70", "70"] }
+        ]
+      },
+      {
+        "name": "Performance",
+        "specs": [
+          { "label": "Seating Capacity", "values": ["5", "5", "5", "5"] },
+          {
+            "label": "0-50 km/h (s)",
+            "values": ["4.6 - 4.8", "4.6 - 4.8", "4.6 - 4.8", "4.6 - 4.8"]
+          },
+          {
+            "label": "Maximum Speed (km/h)",
+            "values": ["140", "140", "140", "140"]
+          },
+          {
+            "label": "Driving Range CLTC (km)",
+            "values": ["330", "330", "430", "430"]
+          },
+          { "label": "Battery Type", "values": ["LFP", "LFP", "LFP", "LFP"] },
+          {
+            "label": "Battery Capacity (kWh)",
+            "values": ["32.56", "32.56", "43.89", "43.89"]
+          }
+        ]
+      }
+    ]
+  },
+
   "cta": {
     "title": "Experience the Box for Yourself",
     "subtitle": "Ready to see what makes the Box special? Book a test drive today and discover the joy of electric driving.",

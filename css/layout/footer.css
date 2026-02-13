@@ -28,15 +28,9 @@
     gap: var(--space-2);
 }
 
-.footer-brand .logo-text {
-    font-size: var(--text-lg);
-    font-weight: var(--font-bold);
-    color: var(--text-inverse);
-}
-
-.footer-tagline {
-    font-size: var(--text-sm);
-    color: var(--text-inverse-secondary);
+.footer-logo {
+    height: 100px;
+    width: auto;
 }
 
 /* ===========================================

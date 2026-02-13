@@ -379,7 +379,7 @@
   background-color: var(--swatch-color);
   cursor: pointer;
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
-  border: 2px solid transparent;
+  border: 2px solid var(--border-light);
 }
 
 .color-swatch:hover {

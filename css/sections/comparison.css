@@ -1,0 +1,160 @@
+/**
+ * Variant Comparison Table
+ * Specs comparison table for model variant pages
+ */
+
+/* ===========================================
+   Section Container
+   =========================================== */
+
+.comparison-section {
+    padding: var(--space-20) 0;
+    background-color: var(--bg-primary);
+}
+
+.comparison-title {
+    font-size: var(--text-3xl);
+    font-weight: var(--font-semibold);
+    color: var(--text-primary);
+    text-align: center;
+    margin-bottom: var(--space-2);
+}
+
+.comparison-subtitle {
+    font-size: var(--text-base);
+    color: var(--text-secondary);
+    text-align: center;
+    margin-bottom: var(--space-10);
+}
+
+/* ===========================================
+   Table Wrapper & Table
+   =========================================== */
+
+.comparison-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-light);
+    background-color: var(--bg-primary);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+/* ===========================================
+   Table Header
+   =========================================== */
+
+.comparison-table thead th {
+    padding: var(--space-4) var(--space-5);
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--text-primary);
+    color: var(--text-inverse);
+}
+
+.comparison-table thead th:first-child {
+    text-align: left;
+    border-radius: var(--radius-lg) 0 0 0;
+}
+
+.comparison-table thead th:last-child {
+    border-radius: 0 var(--radius-lg) 0 0;
+}
+
+/* ===========================================
+   Category Rows
+   =========================================== */
+
+.comparison-category td {
+    padding: var(--space-3) var(--space-5);
+    font-size: var(--text-sm);
+    font-weight: var(--font-semibold);
+    color: var(--text-primary);
+    background-color: var(--color-gray-100);
+    border-bottom: 1px solid var(--border-light);
+}
+
+/* ===========================================
+   Spec Rows
+   =========================================== */
+
+.comparison-table tbody tr:not(.comparison-category) td {
+    padding: var(--space-3) var(--space-5);
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border-light);
+    text-align: center;
+}
+
+.comparison-table tbody tr:not(.comparison-category) td:first-child {
+    color: var(--text-primary);
+    font-weight: var(--font-medium);
+    text-align: left;
+    white-space: nowrap;
+}
+
+.comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* ===========================================
+   Responsive
+   =========================================== */
+
+@media (max-width: 768px) {
+    .comparison-section {
+        padding: var(--space-16) 0;
+    }
+
+    .comparison-title {
+        font-size: var(--text-2xl);
+    }
+
+    .comparison-subtitle {
+        font-size: var(--text-sm);
+    }
+
+    /* Sticky first column on mobile scroll */
+    .comparison-table thead th:first-child,
+    .comparison-table tbody td:first-child {
+        position: sticky;
+        left: 0;
+        z-index: 1;
+    }
+
+    .comparison-table thead th:first-child {
+        background-color: var(--text-primary);
+    }
+
+    .comparison-category td:first-child {
+        position: sticky;
+        left: 0;
+        z-index: 1;
+        background-color: var(--color-gray-100);
+    }
+
+    .comparison-table tbody tr:not(.comparison-category) td:first-child {
+        background-color: var(--bg-primary);
+        box-shadow: 2px 0 4px rgba(0, 0, 0, 0.05);
+    }
+}
+
+@media (max-width: 480px) {
+    .comparison-section {
+        padding: var(--space-12) 0;
+    }
+
+    .comparison-table thead th,
+    .comparison-table tbody td {
+        padding: var(--space-2) var(--space-3);
+        font-size: var(--text-xs);
+    }
+}

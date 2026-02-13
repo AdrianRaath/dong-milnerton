@@ -213,7 +213,7 @@
   }
 
   .about-image-block {
-    order: -1;
+    order: 1;
   }
 
   .about-text-block h2 {

@@ -213,6 +213,39 @@
     }
   ],
 
+  "variantComparison": {
+    "title": "Compare Variants",
+    "subtitle": "See how each 007 variant compares across key specifications.",
+    "variants": ["530KM E1", "620KW E2", "540KM AWD E3"],
+    "categories": [
+      {
+        "name": "Dimensions",
+        "specs": [
+          { "label": "Length (mm)", "values": ["4880", "4880", "4880"] },
+          { "label": "Width (mm)", "values": ["1895", "1895", "1895"] },
+          { "label": "Height (mm)", "values": ["1468", "1468", "1468"] },
+          { "label": "Wheelbase (mm)", "values": ["2915", "2915", "2915"] }
+        ]
+      },
+      {
+        "name": "Powertrain",
+        "specs": [
+          { "label": "Maximum Power (kW)", "values": ["160", "200", "400"] },
+          { "label": "Maximum Torque (N.m)", "values": ["310", "320", "640"] },
+          { "label": "Drive Mode", "values": ["Rear Wheel Drive", "Rear Wheel Drive", "Dual Motor 4WD"] }
+        ]
+      },
+      {
+        "name": "Performance",
+        "specs": [
+          { "label": "Battery Capacity (kWh)", "values": ["56.83", "70.26", "70.26"] },
+          { "label": "CLTC Range (km)", "values": ["530", "620", "540"] },
+          { "label": "0-100 km/h (s)", "values": ["6.8", "5.8", "3.9"] }
+        ]
+      }
+    ]
+  },
+
   "cta": {
     "title": "Experience the 007 for Yourself",
     "subtitle": "Ready to feel the difference? Book a test drive today and discover a new standard of electric performance.",
