@@ -12,9 +12,9 @@
       "alt": "DongFeng Nammi 06"
     },
     "specs": [
-      { "label": "Range", "value": "580 km" },
-      { "label": "Battery", "value": "120 kWh" },
-      { "label": "Charging", "value": "22 min" }
+      { "label": "Range", "value": "471 km" },
+      { "label": "Battery", "value": "51.5 kWh" },
+      { "label": "Power", "value": "99 kW" }
     ],
     "swatches": [
       { "hex": "#748563", "title": "Green" },

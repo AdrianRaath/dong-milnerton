@@ -68,14 +68,6 @@
             "src": "images/car-models/007/exterior/sleek-frameless-doors.avif",
             "alt": "Sleek Frameless Doors"
           }
-        },
-        {
-          "title": "Flush Door Handles",
-          "description": "Aerodynamically integrated flush handles deploy with a tap, maintaining the 007's clean body lines and contributing to reduced drag for improved efficiency.",
-          "image": {
-            "src": "images/car-models/007/exterior/flush-door-handles.avif",
-            "alt": "Flush Door Handles"
-          }
         }
       ]
     },
@@ -271,8 +263,8 @@
     },
     "specs": [
       { "label": "Range", "value": "620 km" },
-      { "label": "Battery", "value": "100 kWh" },
-      { "label": "Charging", "value": "18 min" }
+      { "label": "Battery", "value": "70.3 kWh" },
+      { "label": "Power", "value": "400 kW" }
     ],
     "swatches": [
       { "hex": "#F9F9F9", "title": "White" },

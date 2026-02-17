@@ -314,8 +314,8 @@
     },
     "specs": [
       { "label": "Range", "value": "430 km" },
-      { "label": "Battery", "value": "70 kWh" },
-      { "label": "Charging", "value": "25 min" }
+      { "label": "Battery", "value": "43.9 kWh" },
+      { "label": "Power", "value": "70 kW" }
     ],
     "swatches": [
       { "hex": "#F9F9F9", "title": "White" },
