@@ -99,30 +99,48 @@ function initTestDriveModal() {
     e.preventDefault();
 
     const formData = new FormData(form);
-    const data = Object.fromEntries(formData);
-    data.model = selectedModel;
+    formData.append('model', selectedModel);
 
-    console.log('Test drive request:', data);
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Submitting...';
+    submitBtn.disabled = true;
 
-    // Show success message
-    const content = modal.querySelector('.td-modal-content');
-    content.innerHTML = `
-      <div class="td-modal-step active">
-        <div class="td-modal-success">
-          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2">
-            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-          </svg>
-          <h2 class="td-modal-title">Thank You!</h2>
-          <p class="td-modal-subtitle">We've received your request for a <strong>${selectedModel}</strong> test drive. Our team will contact you shortly.</p>
-          <button type="button" class="btn btn-primary td-btn-full" id="tdSuccessClose">Close</button>
-        </div>
-      </div>
-    `;
+    fetch('https://formspree.io/f/xqednydg', {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+      if (response.ok) {
+        // Show success message
+        const content = modal.querySelector('.td-modal-content');
+        content.innerHTML = `
+          <div class="td-modal-step active">
+            <div class="td-modal-success">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <h2 class="td-modal-title">Thank You!</h2>
+              <p class="td-modal-subtitle">We've received your request for a <strong>${selectedModel}</strong> test drive. Our team will contact you shortly.</p>
+              <button type="button" class="btn btn-primary td-btn-full" id="tdSuccessClose">Close</button>
+            </div>
+          </div>
+        `;
 
-    document.getElementById('tdSuccessClose').addEventListener('click', () => {
-      closeModal();
-      setTimeout(resetModal, 300);
+        document.getElementById('tdSuccessClose').addEventListener('click', () => {
+          closeModal();
+          setTimeout(resetModal, 300);
+        });
+      } else {
+        throw new Error('Form submission failed');
+      }
+    })
+    .catch(() => {
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+      alert('Something went wrong. Please try again.');
     });
   });
 

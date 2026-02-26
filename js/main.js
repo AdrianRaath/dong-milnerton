@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initStatsCounter();
     initSmoothScroll();
     initColorSwatches();
+    initContactForm();
 });
 
 /**
@@ -328,6 +329,51 @@ function initSmoothScroll() {
                     behavior: 'smooth'
                 });
             }
+        });
+    });
+}
+
+/**
+ * Contact Form
+ * Submits the contact page enquiry form to Formspree
+ */
+function initContactForm() {
+    const form = document.getElementById('contactForm');
+    if (!form) return;
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+
+        fetch('https://formspree.io/f/xnjbwggv', {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+        })
+        .then(response => {
+            if (response.ok) {
+                form.innerHTML = `
+                    <div class="td-modal-success" style="text-align: center; padding: var(--space-10) 0;">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" style="margin: 0 auto var(--space-4);">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <h3 style="margin-bottom: var(--space-2);">Thank You!</h3>
+                        <p>Your message has been sent. Our team will get back to you shortly.</p>
+                    </div>
+                `;
+            } else {
+                throw new Error('Form submission failed');
+            }
+        })
+        .catch(() => {
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+            alert('Something went wrong. Please try again.');
         });
     });
 }
