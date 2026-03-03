@@ -80,6 +80,18 @@
   background-color: var(--color-gray-100);
 }
 
+.model-hero-price {
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  color: var(--text-inverse);
+  opacity: 0.85;
+  margin-top: var(--space-4);
+}
+
+.model-hero-price .price-from {
+  font-weight: var(--font-light);
+}
+
 /* Hero Navigation Arrows */
 .model-hero-nav {
   position: absolute;
@@ -491,6 +503,11 @@
   .model-hero-actions .btn-secondary:hover {
     background-color: var(--text-primary);
     color: var(--text-inverse);
+  }
+
+  .model-hero-price {
+    color: var(--text-primary);
+    opacity: 1;
   }
 
   .model-hero-image {

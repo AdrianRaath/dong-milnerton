@@ -127,6 +127,18 @@
   color: var(--text-primary);
 }
 
+.model-price {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  margin-top: var(--space-2);
+}
+
+.model-price .price-from {
+  font-weight: var(--font-light);
+}
+
 /* Specs Overlay - Top Right */
 .model-specs-overlay {
   position: absolute;
@@ -410,6 +422,11 @@
   .model-category {
     font-size: var(--text-sm);
     color: var(--text-secondary);
+  }
+
+  .model-price {
+    font-size: var(--text-xs);
+    margin-top: var(--space-1);
   }
 
   /* Content area with buttons */

@@ -223,6 +223,16 @@ a.nav-dropdown-item:hover {
     color: var(--text-primary);
 }
 
+.nav-dropdown-price {
+    font-size: var(--text-xs);
+    font-weight: var(--font-semibold);
+    color: var(--text-primary);
+}
+
+.nav-dropdown-price .price-from {
+    font-weight: var(--font-light);
+}
+
 .nav-dropdown-item .btn {
     padding: var(--space-2) var(--space-5);
     font-size: var(--text-xs);
@@ -445,6 +455,16 @@ a.nav-dropdown-item:hover {
         font-size: var(--text-lg);
         font-weight: var(--font-semibold);
         color: var(--text-primary);
+    }
+
+    .nav-mobile-model-price {
+        font-size: var(--text-xs);
+        font-weight: var(--font-semibold);
+        color: var(--text-primary);
+    }
+
+    .nav-mobile-model-price .price-from {
+        font-weight: var(--font-light);
     }
 
     .nav-mobile-model-links {
