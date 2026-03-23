@@ -2,7 +2,7 @@
   "id": "nammi-06",
   "name": "Nammi 06",
   "startingPrice": "TBA",
-  "pageTitle": "DongFeng Nammi 06 | Electric Vehicles",
+  "pageTitle": "Dongfeng Nammi 06 | Electric Vehicles",
   "previewImage": "images/base/vigo-preview.avif",
 
   "card": {
@@ -10,7 +10,7 @@
     "subtitle": "Breaking Barriers to EV Versatility",
     "image": {
       "src": "images/base/vigo-preview.avif",
-      "alt": "DongFeng Nammi 06"
+      "alt": "Dongfeng Nammi 06"
     },
     "specs": [
       { "label": "Range", "value": "471 km" },

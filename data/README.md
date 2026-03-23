@@ -1,6 +1,6 @@
-# DongFeng Data Files
+# Dongfeng Data Files
 
-This folder contains structured data files that define content for various pages on the DongFeng website. These files serve as a "source of truth" for page content and can be used to generate or update HTML pages.
+This folder contains structured data files that define content for various pages on the Dongfeng website. These files serve as a "source of truth" for page content and can be used to generate or update HTML pages.
 
 ## How It Works
 
@@ -103,7 +103,7 @@ Introduction area with text, stats, and an image.
   ],
   "image": {
     "src": "images/car-models/box/intro/intro.avif",
-    "alt": "DongFeng Box Interior"
+    "alt": "Dongfeng Box Interior"
   }
 }
 ```
@@ -251,7 +251,7 @@ Bottom call-to-action section.
   "buttonHref": "#book",
   "image": {
     "src": "images/car-models/box/cta/cta-image.avif",
-    "alt": "DongFeng Box"
+    "alt": "Dongfeng Box"
   }
 }
 ```
@@ -281,7 +281,7 @@ Controls how the model appears as a card in the home page model slider. This sec
   "subtitle": "Breaking Barriers to EV Performance",
   "image": {
     "src": "images/base/007-preview.avif",
-    "alt": "DongFeng 007"
+    "alt": "Dongfeng 007"
   },
   "specs": [
     { "label": "Range", "value": "620 km" },

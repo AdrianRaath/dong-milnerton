@@ -1,5 +1,5 @@
 /**
- * DongFeng - Main JavaScript
+ * Dongfeng - Main JavaScript
  * Handles navigation, slider, animations, and interactions
  */
 

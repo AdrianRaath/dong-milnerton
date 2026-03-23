@@ -92,7 +92,7 @@ function initColorSelector() {
 
         setTimeout(() => {
           carImage.src = newImageSrc;
-          carImage.alt = `DongFeng Box in ${colorName.charAt(0).toUpperCase() + colorName.slice(1)}`;
+          carImage.alt = `Dongfeng Box in ${colorName.charAt(0).toUpperCase() + colorName.slice(1)}`;
           carImage.style.opacity = '1';
         }, 150);
       }

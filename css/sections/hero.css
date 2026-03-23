@@ -50,6 +50,14 @@
   max-width: 600px;
 }
 
+.hero-subtitle {
+  font-size: var(--text-lg);
+  font-weight: var(--font-normal);
+  color: var(--text-primary);
+  max-width: 600px;
+  margin-bottom: var(--space-4);
+}
+
 .hero-cta {
   margin-top: var(--space-2);
 }
@@ -157,6 +165,11 @@
 
   .hero-title .text-brand {
     color: var(--text-inverse);
+  }
+
+  .hero-subtitle {
+    color: var(--text-inverse);
+    opacity: 0.85;
   }
 }
 

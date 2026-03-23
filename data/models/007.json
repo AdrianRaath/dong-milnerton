@@ -2,7 +2,7 @@
   "id": "007",
   "name": "007",
   "startingPrice": "R799 000",
-  "pageTitle": "DongFeng 007 | Electric Vehicles",
+  "pageTitle": "Dongfeng 007 | Electric Vehicles",
   "previewImage": "images/car-models/007/colors/black.avif",
 
   "hero": {
@@ -26,7 +26,7 @@
   "intro": {
     "title": "Meet the 007",
     "paragraphs": [
-      "The DongFeng 007 is engineered for those who demand more from every drive. With a striking silhouette and commanding road presence, the 007 delivers executive-level refinement paired with exhilarating electric performance.",
+      "The Dongfeng 007 is engineered for those who demand more from every drive. With a striking silhouette and commanding road presence, the 007 delivers executive-level refinement paired with exhilarating electric performance.",
       "From the boardroom to the open road, the 007 combines rapid acceleration, long-range capability and cutting-edge technology into a seamless driving experience that sets a new benchmark for electric sedans."
     ],
     "stats": [
@@ -36,7 +36,7 @@
     ],
     "image": {
       "src": "images/car-models/007/intro/intro.avif",
-      "alt": "DongFeng 007 Interior"
+      "alt": "Dongfeng 007 Interior"
     }
   },
 
@@ -246,7 +246,7 @@
     "buttonHref": "#book",
     "image": {
       "src": "images/car-models/007/cta/cta-image.avif",
-      "alt": "DongFeng 007"
+      "alt": "Dongfeng 007"
     }
   },
 
@@ -260,7 +260,7 @@
     "subtitle": "Breaking Barriers to EV Performance",
     "image": {
       "src": "images/base/007-preview.avif",
-      "alt": "DongFeng 007"
+      "alt": "Dongfeng 007"
     },
     "specs": [
       { "label": "Range", "value": "620 km" },

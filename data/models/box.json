@@ -2,7 +2,7 @@
   "id": "box",
   "name": "Box",
   "startingPrice": "R459 000",
-  "pageTitle": "DongFeng Box | Electric Vehicles",
+  "pageTitle": "Dongfeng Box | Electric Vehicles",
   "previewImage": "images/car-models/box/colors/blue.avif",
 
   "hero": {
@@ -26,7 +26,7 @@
   "intro": {
     "title": "Meet the Box",
     "paragraphs": [
-      "The DongFeng Box redefines urban mobility with its bold, distinctive design and compact footprint. Perfect for city driving, this all-electric vehicle combines playful aesthetics with practical performance.",
+      "The Dongfeng Box redefines urban mobility with its bold, distinctive design and compact footprint. Perfect for city driving, this all-electric vehicle combines playful aesthetics with practical performance.",
       "With a range that handles your daily commute and weekend adventures, the Box delivers everything you need in an eco-friendly package that stands out from the crowd."
     ],
     "stats": [
@@ -36,7 +36,7 @@
     ],
     "image": {
       "src": "images/car-models/box/intro/intro.avif",
-      "alt": "DongFeng Box Interior"
+      "alt": "Dongfeng Box Interior"
     }
   },
 
@@ -297,7 +297,7 @@
     "buttonHref": "#book",
     "image": {
       "src": "images/car-models/box/cta/cta-image.avif",
-      "alt": "DongFeng Box"
+      "alt": "Dongfeng Box"
     }
   },
 
@@ -311,7 +311,7 @@
     "subtitle": "Breaking Barriers to EV Fun",
     "image": {
       "src": "images/base/box-preview.avif",
-      "alt": "DongFeng Box"
+      "alt": "Dongfeng Box"
     },
     "specs": [
       { "label": "Range", "value": "430 km" },

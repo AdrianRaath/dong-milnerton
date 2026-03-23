@@ -152,7 +152,7 @@ function initTestDriveModal() {
   function updatePreview(modelName) {
     previewName.textContent = modelName;
     previewImg.src = modelImages[modelName] || '';
-    previewImg.alt = 'DongFeng ' + modelName;
+    previewImg.alt = 'Dongfeng ' + modelName;
   }
 
   function openModalWithModel(modelName) {
