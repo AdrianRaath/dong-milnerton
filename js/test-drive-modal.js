@@ -25,7 +25,8 @@ function initTestDriveModal() {
   // Map model names to their preview images
   const modelImages = {
     '007': 'images/car-models/007/colors/black.avif',
-    'Box': 'images/car-models/box/colors/blue.avif'
+    'Box': 'images/car-models/box/colors/blue.avif',
+    '06': 'images/car-models/06/colors/green.avif'
   };
 
   let selectedModel = null;

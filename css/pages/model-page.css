@@ -80,6 +80,18 @@
   background-color: var(--color-gray-100);
 }
 
+.model-hero--gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none;
+}
+
 .model-hero-price {
   font-size: var(--text-sm);
   font-weight: var(--font-semibold);
@@ -503,6 +515,10 @@
   .model-hero-actions .btn-secondary:hover {
     background-color: var(--text-primary);
     color: var(--text-inverse);
+  }
+
+  .model-hero--gradient::before {
+    display: none;
   }
 
   .model-hero-price {

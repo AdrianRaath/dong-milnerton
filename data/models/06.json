@@ -1,0 +1,242 @@
+{
+  "id": "06",
+  "name": "06",
+  "startingPrice": "R499 000",
+  "pageTitle": "Dongfeng 06 | Electric SUV | Dongfeng Milnerton",
+  "previewImage": "images/car-models/06/colors/green.avif",
+
+  "hero": {
+    "title": "Dongfeng 06",
+    "tagline": "Breaking Barriers to EV Versatility",
+    "backgroundImage": "images/car-models/06/hero/hero.avif",
+    "buttons": {
+      "primary": {
+        "text": "Book Test Drive",
+        "textShort": "Test Drive",
+        "href": "#book"
+      },
+      "secondary": {
+        "text": "Explore 06",
+        "textShort": "Explore",
+        "href": "#exterior"
+      }
+    }
+  },
+
+  "intro": {
+    "title": "Meet the Dongfeng 06",
+    "paragraphs": [
+      "The Dongfeng 06 is built for those who want it all - space, style and electric efficiency in one versatile package. With a bold silhouette and a confident stance, the 06 delivers SUV practicality without compromising on modern design.",
+      "Whether you're navigating city streets or heading out on a weekend adventure, the 06 combines generous interior space, a capable electric drivetrain and smart technology into a driving experience that adapts to your lifestyle."
+    ],
+    "stats": [
+      { "value": "480", "unit": "km", "label": "Range" },
+      { "value": "51", "unit": "kWh", "label": "Battery" },
+      { "value": "99", "unit": "kW", "label": "Power" }
+    ],
+    "image": {
+      "src": "images/car-models/06/intro/intro.avif",
+      "alt": "Dongfeng 06 Interior"
+    }
+  },
+
+  "sections": [
+    {
+      "type": "features",
+      "id": "exterior",
+      "title": "Designed to Turn Heads",
+      "features": [
+        {
+          "title": "Crystal LED Headlights",
+          "description": "Sharp, precisely crafted LED headlights deliver outstanding visibility while giving the 06 a striking front-end presence that stands out on any road.",
+          "image": {
+            "src": "images/car-models/06/exterior/crystal-led-headlights.avif",
+            "alt": "Dongfeng 06 Crystal LED Headlights"
+          }
+        },
+        {
+          "title": "Interactive Tail Lights",
+          "description": "Dynamic LED tail lights feature animated light sequences that respond to driving conditions, enhancing rear visibility while creating a distinctive signature look.",
+          "image": {
+            "src": "images/car-models/06/exterior/interactive-tail-lights.avif",
+            "alt": "Dongfeng 06 Interactive Tail Lights"
+          }
+        },
+        {
+          "title": "Custom Sports Rims",
+          "description": "Lightweight alloy sports rims add a bold, athletic edge to the 06's profile while optimising aerodynamics for improved range and efficiency.",
+          "image": {
+            "src": "images/car-models/06/exterior/custom-sports-rims.avif",
+            "alt": "Dongfeng 06 Custom Sports Rims"
+          }
+        },
+        {
+          "title": "Electric Door Release",
+          "description": "A sleek electronic door release replaces traditional handles for a cleaner exterior profile, opening effortlessly at the touch of a button.",
+          "image": {
+            "src": "images/car-models/06/exterior/electric-door-release.avif",
+            "alt": "Dongfeng 06 Electric Door Release"
+          }
+        },
+        {
+          "title": "Convenient Split Tailgate",
+          "description": "A cleverly designed split tailgate offers flexible loading options, making it easy to access the boot whether you're picking up groceries or loading larger items.",
+          "image": {
+            "src": "images/car-models/06/exterior/convenient-split-tailgate.avif",
+            "alt": "Dongfeng 06 Convenient Split Tailgate"
+          }
+        }
+      ]
+    },
+    {
+      "type": "colors",
+      "id": "colors",
+      "title": "Find Your Perfect Colour",
+      "subtitle": "Express your personality with a range of bold and refined colour options.",
+      "basePath": "images/car-models/06/colors",
+      "defaultColor": "green",
+      "colors": [
+        { "name": "green", "hex": "#748563", "title": "Green" },
+        { "name": "orange", "hex": "#FD864C", "title": "Orange" },
+        { "name": "silver", "hex": "#E0E1E4", "title": "Silver" },
+        { "name": "sandstorm", "hex": "#C6BBAC", "title": "Sand" },
+        { "name": "titanium", "hex": "#7B8186", "title": "Titanium" },
+        { "name": "black", "hex": "#2C2C2C", "title": "Black" }
+      ]
+    },
+    {
+      "type": "features",
+      "id": "smart",
+      "title": "Smart Where It Counts",
+      "features": [
+        {
+          "title": "Infotainment System",
+          "description": "A large, responsive touchscreen puts navigation, media, vehicle settings and connectivity at your fingertips through a clean, intuitive interface.",
+          "image": {
+            "src": "images/car-models/06/smart/infotainment.avif",
+            "alt": "Dongfeng 06 Infotainment System"
+          }
+        },
+        {
+          "title": "Transformable Bed Interior",
+          "description": "Fold the rear seats flat to create a spacious, comfortable rest area - perfect for road trips, camping or simply taking a break on a long journey.",
+          "image": {
+            "src": "images/car-models/06/smart/transformable-bed-interior.avif",
+            "alt": "Dongfeng 06 Transformable Bed Interior"
+          }
+        },
+        {
+          "title": "Wireless Phone Charger",
+          "description": "Keep your device powered without the clutter of cables using the integrated wireless charging pad, conveniently placed within easy reach.",
+          "image": {
+            "src": "images/car-models/06/smart/wireless-phone-charger.avif",
+            "alt": "Dongfeng 06 Wireless Phone Charger"
+          }
+        }
+      ]
+    },
+    {
+      "type": "safety",
+      "id": "safety",
+      "title": "Protection You Can Count On",
+      "subtitle": "The 06 is equipped with intelligent safety systems designed to keep you and your passengers safe on every journey.",
+      "features": [
+        {
+          "title": "Intelligent Active Safety Assistants",
+          "description": "A suite of advanced driver assistance systems works together to monitor your surroundings, alert you to potential hazards and intervene when needed to help prevent collisions.",
+          "image": {
+            "src": "images/car-models/06/safety/intelligent-active-safety-assistants.gif",
+            "alt": "Dongfeng 06 Intelligent Active Safety Assistants"
+          }
+        },
+        {
+          "title": "Multi-Scene Intelligent Parking",
+          "description": "Advanced parking assistance handles a variety of parking scenarios, using sensors and cameras to guide you into tight spots with confidence and precision.",
+          "image": {
+            "src": "images/car-models/06/safety/multi-scene-intelligent-parking.gif",
+            "alt": "Dongfeng 06 Multi-Scene Intelligent Parking"
+          }
+        }
+      ]
+    },
+    {
+      "type": "features",
+      "id": "comfort",
+      "title": "Comfort for Every Journey",
+      "features": [
+        {
+          "title": "Comfy Eco Friendly Cabin",
+          "description": "Sustainable materials and soft-touch surfaces create a cabin that feels premium and welcoming while being mindful of the environment.",
+          "image": {
+            "src": "images/car-models/06/comfort/comfy-eco-friendly-cabin.avif",
+            "alt": "Dongfeng 06 Eco Friendly Cabin"
+          }
+        },
+        {
+          "title": "Multi-Function Steering Wheel",
+          "description": "Keep your hands on the wheel and your focus on the road with intuitive controls for audio, phone, cruise control and driver assistance features.",
+          "image": {
+            "src": "images/car-models/06/comfort/multi-function-steering-wheel.avif",
+            "alt": "Dongfeng 06 Multi-Function Steering Wheel"
+          }
+        },
+        {
+          "title": "Practical Interior",
+          "description": "Thoughtfully designed storage throughout the cabin keeps your essentials organised and within reach, making everyday driving effortless.",
+          "image": {
+            "src": "images/car-models/06/comfort/practical-interior.avif",
+            "alt": "Dongfeng 06 Practical Interior"
+          }
+        },
+        {
+          "title": "Smart Ambient Lighting",
+          "description": "Customisable ambient lighting sets the mood for every drive, bathing the cabin in your choice of colour to match your style or the moment.",
+          "image": {
+            "src": "images/car-models/06/comfort/smart-ambient-lighting.avif",
+            "alt": "Dongfeng 06 Smart Ambient Lighting"
+          }
+        }
+      ]
+    }
+  ],
+
+  "cta": {
+    "title": "Experience the Dongfeng 06 in Cape Town",
+    "subtitle": "Ready to see what the 06 can do? Book a test drive today and discover versatile electric driving for yourself.",
+    "buttonText": "Book a Test Drive",
+    "buttonHref": "#book",
+    "image": {
+      "src": "images/car-models/06/cta/cta-image.avif",
+      "alt": "Dongfeng 06 available at Dongfeng Milnerton"
+    }
+  },
+
+  "modal": {
+    "title": "Book a Test Drive",
+    "subtitle": "Experience the 06 for yourself. Fill in your details and we'll be in touch."
+  },
+
+  "card": {
+    "title": "06",
+    "subtitle": "Breaking Barriers to EV Versatility",
+    "image": {
+      "src": "images/base/vigo-preview.avif",
+      "alt": "Dongfeng 06"
+    },
+    "specs": [
+      { "label": "Range", "value": "480 km" },
+      { "label": "Battery", "value": "51 kWh" },
+      { "label": "Power", "value": "99 kW" }
+    ],
+    "swatches": [
+      { "hex": "#748563", "title": "Green" },
+      { "hex": "#FD864C", "title": "Orange" },
+      { "hex": "#E0E1E4", "title": "Silver" },
+      { "hex": "#C6BBAC", "title": "Sand" },
+      { "hex": "#7B8186", "title": "Titanium" },
+      { "hex": "#2C2C2C", "title": "Black" }
+    ],
+    "status": "available",
+    "pageUrl": "/06.html"
+  }
+}
