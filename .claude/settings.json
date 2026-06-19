@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import json; d=json.load\\(open\\('data/models/box.json'\\)\\); print\\('OK - startingPrice:', d['startingPrice']\\); print\\('colors:', [c['name'] for c in [s for s in d['sections'] if s.get\\('type'\\)=='colors'][0]['colors']]\\); print\\('card swatches:', [s['title'] for s in d['card']['swatches']]\\); print\\('displayed variants:', d['variantComparison']['variants']\\); print\\('hidden variants:', d['hiddenVariants']['variants']\\)\")"
+    ]
+  }
+}

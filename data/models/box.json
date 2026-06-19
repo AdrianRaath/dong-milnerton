@@ -1,7 +1,7 @@
 {
   "id": "box",
   "name": "Box",
-  "startingPrice": "R459 000",
+  "startingPrice": "R349 000",
   "pageTitle": "Dongfeng Box | Electric Vehicles",
   "previewImage": "images/car-models/box/colors/blue.avif",
 
@@ -89,12 +89,9 @@
       "defaultColor": "white",
       "colors": [
         { "name": "white", "hex": "#F9F9F9", "title": "White" },
-        { "name": "silver", "hex": "#9FA6AE", "title": "Silver" },
         { "name": "blue", "hex": "#426988", "title": "Blue" },
         { "name": "green", "hex": "#CFE02A", "title": "Green" },
-        { "name": "red", "hex": "#C32C35", "title": "Red" },
-        { "name": "purple", "hex": "#8B69A1", "title": "Purple" },
-        { "name": "pink", "hex": "#CEA6AF", "title": "Pink" }
+        { "name": "purple", "hex": "#8B69A1", "title": "Purple" }
       ]
     },
     {
@@ -220,24 +217,15 @@
   "variantComparison": {
     "title": "Compare Variants",
     "subtitle": "See how each Box variant stacks up to find the perfect fit for your lifestyle.",
-    "variants": ["E1 330", "E2 330", "E2 430", "E3 430"],
+    "variants": ["E2 430", "E3 430"],
     "categories": [
       {
         "name": "Dimensions",
         "specs": [
-          {
-            "label": "Length (mm)",
-            "values": ["4020", "4020", "4020", "4020"]
-          },
-          { "label": "Width (mm)", "values": ["1810", "1810", "1810", "1810"] },
-          {
-            "label": "Height (mm)",
-            "values": ["1570", "1570", "1570", "1570"]
-          },
-          {
-            "label": "Wheelbase (mm)",
-            "values": ["2663", "2663", "2663", "2663"]
-          }
+          { "label": "Length (mm)", "values": ["4020", "4020"] },
+          { "label": "Width (mm)", "values": ["1810", "1810"] },
+          { "label": "Height (mm)", "values": ["1570", "1570"] },
+          { "label": "Wheelbase (mm)", "values": ["2663", "2663"] }
         ]
       },
       {
@@ -247,44 +235,69 @@
             "label": "Motor Type",
             "values": [
               "Permanent Magnet Synchronous",
-              "Permanent Magnet Synchronous",
-              "Permanent Magnet Synchronous",
               "Permanent Magnet Synchronous"
             ]
           },
           {
             "label": "Drivetrain",
-            "values": [
-              "Front-Wheel Drive",
-              "Front-Wheel Drive",
-              "Front-Wheel Drive",
-              "Front-Wheel Drive"
-            ]
+            "values": ["Front-Wheel Drive", "Front-Wheel Drive"]
           },
-          { "label": "Maximum Power (kW)", "values": ["70", "70", "70", "70"] }
+          { "label": "Maximum Power (kW)", "values": ["70", "70"] }
         ]
       },
       {
         "name": "Performance",
         "specs": [
-          { "label": "Seating Capacity", "values": ["5", "5", "5", "5"] },
+          { "label": "Seating Capacity", "values": ["5", "5"] },
           {
             "label": "0-50 km/h (s)",
-            "values": ["4.6 - 4.8", "4.6 - 4.8", "4.6 - 4.8", "4.6 - 4.8"]
+            "values": ["4.6 - 4.8", "4.6 - 4.8"]
           },
-          {
-            "label": "Maximum Speed (km/h)",
-            "values": ["140", "140", "140", "140"]
-          },
-          {
-            "label": "Driving Range CLTC (km)",
-            "values": ["330", "330", "430", "430"]
-          },
-          { "label": "Battery Type", "values": ["LFP", "LFP", "LFP", "LFP"] },
+          { "label": "Maximum Speed (km/h)", "values": ["140", "140"] },
+          { "label": "Driving Range CLTC (km)", "values": ["430", "430"] },
+          { "label": "Battery Type", "values": ["LFP", "LFP"] },
           {
             "label": "Battery Capacity (kWh)",
-            "values": ["32.56", "32.56", "43.89", "43.89"]
+            "values": ["43.89", "43.89"]
           }
+        ]
+      }
+    ]
+  },
+
+  "hiddenVariants": {
+    "note": "Not currently displayed in the variant comparison table (client request, 2026-06-19). The E1 330 variant was removed entirely; the E2 330 variant below is kept on hand so it can be re-added later. To restore, add its name back into variantComparison.variants and each spec's value into the matching position of variantComparison.categories[].specs[].values, then mirror the change in the box.html comparison table.",
+    "variants": ["E2 330"],
+    "categories": [
+      {
+        "name": "Dimensions",
+        "specs": [
+          { "label": "Length (mm)", "values": ["4020"] },
+          { "label": "Width (mm)", "values": ["1810"] },
+          { "label": "Height (mm)", "values": ["1570"] },
+          { "label": "Wheelbase (mm)", "values": ["2663"] }
+        ]
+      },
+      {
+        "name": "Powertrain",
+        "specs": [
+          {
+            "label": "Motor Type",
+            "values": ["Permanent Magnet Synchronous"]
+          },
+          { "label": "Drivetrain", "values": ["Front-Wheel Drive"] },
+          { "label": "Maximum Power (kW)", "values": ["70"] }
+        ]
+      },
+      {
+        "name": "Performance",
+        "specs": [
+          { "label": "Seating Capacity", "values": ["5"] },
+          { "label": "0-50 km/h (s)", "values": ["4.6 - 4.8"] },
+          { "label": "Maximum Speed (km/h)", "values": ["140"] },
+          { "label": "Driving Range CLTC (km)", "values": ["330"] },
+          { "label": "Battery Type", "values": ["LFP"] },
+          { "label": "Battery Capacity (kWh)", "values": ["32.56"] }
         ]
       }
     ]
@@ -320,12 +333,9 @@
     ],
     "swatches": [
       { "hex": "#F9F9F9", "title": "White" },
-      { "hex": "#9FA6AE", "title": "Silver" },
       { "hex": "#426988", "title": "Blue" },
       { "hex": "#CFE02A", "title": "Green" },
-      { "hex": "#C32C35", "title": "Red" },
-      { "hex": "#8B69A1", "title": "Purple" },
-      { "hex": "#CEA6AF", "title": "Pink" }
+      { "hex": "#8B69A1", "title": "Purple" }
     ],
     "status": "available",
     "pageUrl": "/box.html"
