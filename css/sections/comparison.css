@@ -104,6 +104,38 @@
     border-bottom: none;
 }
 
+/* ===========================================
+   Feature Availability Icons
+   =========================================== */
+
+.comparison-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
+
+.comparison-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.comparison-icon--yes {
+    color: var(--color-success);
+}
+
+.comparison-icon--no {
+    color: var(--color-error);
+}
+
+/* Feature names are longer than spec labels — let them wrap instead of
+   forcing the whole table wider. Scoped so other comparison tables keep
+   their single-line spec labels. */
+.comparison-table--features tbody tr:not(.comparison-category) td:first-child {
+    white-space: normal;
+    min-width: 220px;
+}
+
 
 /* ===========================================
    Responsive
@@ -156,5 +188,84 @@
     .comparison-table tbody td {
         padding: var(--space-2) var(--space-3);
         font-size: var(--text-xs);
+    }
+}
+
+/* ===========================================
+   Feature Comparison — Mobile Card Layout
+   Long feature names make the standard grid scroll sideways on phones,
+   hiding the variant columns. For this table only, collapse each feature
+   into a card with both variants stacked and labelled beneath it. Other
+   comparison tables keep the normal scrollable grid above.
+   =========================================== */
+
+@media (max-width: 768px) {
+    .comparison-table--features {
+        min-width: 0;
+    }
+
+    .comparison-table--features thead {
+        display: none;
+    }
+
+    .comparison-table--features,
+    .comparison-table--features tbody,
+    .comparison-table--features tr,
+    .comparison-table--features td {
+        display: block;
+        width: auto;
+    }
+
+    /* Category banner */
+    .comparison-table--features tr.comparison-category td:first-child {
+        position: static;
+        box-shadow: none;
+    }
+
+    .comparison-table--features tr.comparison-category td:not(:first-child) {
+        display: none;
+    }
+
+    /* Each feature becomes a card */
+    .comparison-table--features tbody tr:not(.comparison-category) {
+        padding: var(--space-4) var(--space-5);
+        border-bottom: 1px solid var(--border-light);
+    }
+
+    /* Feature name heads the card */
+    .comparison-table--features tbody tr:not(.comparison-category) td:first-child {
+        position: static;
+        box-shadow: none;
+        background: transparent;
+        min-width: 0;
+        padding: 0 0 var(--space-2);
+        font-size: var(--text-sm);
+        font-weight: var(--font-semibold);
+        white-space: normal;
+    }
+
+    /* Variant result rows: "E2 430 .......... ✓" */
+    .comparison-table--features tbody tr:not(.comparison-category) td:not(:first-child) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        padding: var(--space-2) 0;
+        border-top: 1px solid var(--border-light);
+    }
+
+    .comparison-table--features tbody tr:not(.comparison-category) td:not(:first-child)::before {
+        font-size: var(--text-sm);
+        font-weight: var(--font-medium);
+        color: var(--text-secondary);
+    }
+
+    /* Variant labels — update here if the variant names change */
+    .comparison-table--features tbody tr:not(.comparison-category) td:nth-child(2)::before {
+        content: "E2 430";
+    }
+
+    .comparison-table--features tbody tr:not(.comparison-category) td:nth-child(3)::before {
+        content: "E3 430";
     }
 }

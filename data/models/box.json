@@ -216,6 +216,36 @@
 
   "variantComparison": {
     "title": "Compare Variants",
+    "subtitle": "Features the E3 430 offers over the E2 430.",
+    "variants": ["E2 430", "E3 430"],
+    "categories": [
+      {
+        "name": "Safety & Driver Assistance",
+        "specs": [
+          { "label": "Active Braking System (AEB)", "values": [false, true] },
+          { "label": "Front Collision Warning System (FCW)", "values": [false, true] },
+          { "label": "Lane Departure Warning System (LDW)", "values": [false, true] },
+          { "label": "Lane Keep Assist (LKA)", "values": [false, true] },
+          { "label": "Intelligent Speed Control", "values": [false, true] },
+          { "label": "Intelligent Switching (Auto High/Low Beam Control)", "values": [false, true] },
+          { "label": "Front Radar", "values": [false, true] },
+          { "label": "360° Panoramic Camera", "values": [false, true] },
+          { "label": "Adaptive Cruise Control (ACC)", "values": [false, true] },
+          { "label": "Automatic Parking Assist", "values": [false, true] }
+        ]
+      },
+      {
+        "name": "Lighting",
+        "specs": [
+          { "label": "Adaptive High and Low Beam Headlights", "values": [false, true] }
+        ]
+      }
+    ]
+  },
+
+  "hiddenSpecComparison": {
+    "note": "Previous spec-based variant comparison (Dimensions / Powertrain / Performance). Replaced on 2026-06-25 by the feature-availability table now in variantComparison, because the E2 430 and E3 430 share near-identical specs. Kept on hand — to restore, move this block's title/subtitle/variants/categories back into variantComparison and rebuild the box.html comparison table.",
+    "title": "Compare Variants",
     "subtitle": "See how each Box variant stacks up to find the perfect fit for your lifestyle.",
     "variants": ["E2 430", "E3 430"],
     "categories": [
